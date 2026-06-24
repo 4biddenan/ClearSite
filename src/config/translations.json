@@ -111,7 +111,11 @@
     "contact_section_desc": "Let’s clear your space with reliable and timely junk removal. Schedule a convenient time for hassle-free residential and construction junk pickup.",
     "site_brand_name": "Clear Site West Island",
     "schedule_section_desc": "Select your municipality, load volume, and options below to check prices, book a slot, or request a callback.",
-    "btn_contact_us_form": "Contact Us"
+    "btn_contact_us_form": "Contact Us",
+    "faq_q6_title": "What materials are strictly prohibited?",
+    "faq_q6_body": "For the safety of our crew and community compliance, we maintain a zero-tolerance transportation ban on hazardous household waste (HHW). This includes loose asbestos fibers, wet chemical lead paints, storage propane tanks, industrial solvents, or medical pollutants.",
+    "faq_q7_title": "What are the requirements and discharges for each service tier?",
+    "faq_q7_body": "Each tier has distinct operational parameters: Unprepared Pick-Up requires full site access for our crew; Curbside Collection requires all junk positioned at the property line prior to pickup; On-Site Disposal Meeting requires the client to meet at the eco-centre gate with resident ID for fee off-set; and Full Co-Pilot is passive for vehicle operation (a licensed ClearSite professional operates the vehicle at all times due to insurance compliance)."
   },
   "fr": {
     "site_title": "Ramassage d'Encombrants et Logistique de Débris | ClearSite Solutions",
@@ -225,6 +229,10 @@
     "contact_section_desc": "Libérons votre espace grâce à une collecte fiable et rapide d'encombrants. Planifiez un moment opportun pour un ramassage sans tracas de vos débris résidentiels et de construction.",
     "site_brand_name": "Clear Site West Island",
     "schedule_section_desc": "Sélectionnez votre municipalité, le volume de charge et les options ci-dessous pour estimer le tarif, réserver un créneau ou demander un rappel.",
-    "btn_contact_us_form": "Contact Us"
+    "btn_contact_us_form": "Contact Us",
+    "faq_q6_title": "Quels matériaux sont strictement interdits ?",
+    "faq_q6_body": "Pour la sécurité de notre équipe et la conformité communautaire, nous maintenons une interdiction absolue sur le transport des résidus domestiques dangereux (RDD). Cela comprend les fibres d'amiante libres, les peintures au plomb liquides, les réservoirs de propane, les solvants industriels ou les polluants médicaux.",
+    "faq_q7_title": "Quelles sont les exigences et décharges pour chaque formule de service ?",
+    "faq_q7_body": "Chaque formule a des paramètres opérationnels distincts : la Collecte Non Préparée exige un accès complet au site pour notre équipe ; la Collecte en Bordure de Rue exige que tous les débris soient placés en bordure de propriété avant notre arrivée ; le Rendez-vous à l'Écocentre exige que le client se rende à l'écocentre avec une pièce d'identité pour compenser les frais ; et le Partage de Main-d'Œuvre est passif pour la conduite (un professionnel agréé conduit le véhicule en tout temps pour des raisons d'assurance)."
   }
 }

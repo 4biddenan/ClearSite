@@ -281,33 +281,10 @@
       </div>
     </section>
 
-    <!-- Legal Discharges & Prohibited Debris -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6" id="legal-waiver">
-      
-      <!-- Operations Note Card -->
-      <div class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
-        <h3 class="text-xs sm:text-sm font-black text-brandNavy uppercase tracking-wider border-b border-slate-100 pb-2" data-i18n="waiver_note_title">
-          Legal Waiver &amp; Operations Note
-        </h3>
-        <p id="waiver-note-text" class="text-xs sm:text-sm text-gray-500 leading-relaxed font-medium bg-slate-50 p-4 rounded-xl border border-slate-200/35 min-h-[80px]">
-          <!-- Loaded dynamically in services.js -->
-        </p>
-      </div>
 
-      <!-- Prohibitions Card -->
-      <div class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
-        <h3 class="text-xs sm:text-sm font-black text-rose-800 uppercase tracking-wider border-b border-slate-100 pb-2" data-i18n="prohibition_note_title">
-          Strictly Prohibited Volatile Materials
-        </h3>
-        <p id="prohibition-note-text" class="text-xs sm:text-sm text-rose-600 leading-relaxed font-medium bg-rose-50/50 p-4 rounded-xl border border-rose-100/40 min-h-[80px]">
-          <!-- Loaded dynamically in services.js -->
-        </p>
-      </div>
-
-    </section>
 
     <!-- FAQ Accordion Section -->
-    <section class="space-y-4">
+    <section class="space-y-4" id="FrequentlyAskedQuestions">
       <div class="space-y-2">
         <h2 class="text-xl sm:text-2xl font-black text-brandNavy tracking-tight" data-i18n="section_faq_title">
           Frequently Asked Questions
@@ -394,6 +371,36 @@
           </div>
         </div>
 
+        <!-- FAQ 6 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-6" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-6">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q6_title">What materials are strictly prohibited?</span>
+            <svg id="faq-chevron-6" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-6" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-6">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q6_body">
+                For the safety of our crew and community compliance, we maintain a zero-tolerance transportation ban on hazardous household waste (HHW). This includes loose asbestos fibers, wet chemical lead paints, storage propane tanks, industrial solvents, or medical pollutants.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-7" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-7">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q7_title">What are the requirements and discharges for each service tier?</span>
+            <svg id="faq-chevron-7" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-7" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-7">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q7_body">
+                Each tier has distinct operational parameters: Unprepared Pick-Up requires full site access for our crew; Curbside Collection requires all junk positioned at the property line prior to pickup; On-Site Disposal Meeting requires the client to meet at the eco-centre gate with resident ID for fee off-set; and Full Co-Pilot is passive for vehicle operation (a licensed ClearSite professional operates the vehicle at all times due to insurance compliance).
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -416,7 +423,7 @@
       <div class="space-y-3">
         <h4 class="font-extrabold text-white uppercase tracking-wider text-[10px]" data-i18n="footer_links_title">Operational Resources</h4>
         <ul class="space-y-2 text-[11px]">
-          <li><a href="#legal-waiver" class="hover:text-brandEmerald transition-all" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note</a></li>
+          <li><a href="#FrequentlyAskedQuestions" class="hover:text-brandEmerald transition-all" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note</a></li>
           <li><a href="#hours-operation" class="hover:text-brandEmerald transition-all" data-i18n="card_monday_title">🚨 The Monday Calendar Breakout</a></li>
           <li><a href="./index.html" class="hover:text-brandEmerald transition-all" data-i18n="footer_link_calc">Price Estimation Tool</a></li>
         </ul>

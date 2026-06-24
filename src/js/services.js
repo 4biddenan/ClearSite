@@ -32,7 +32,7 @@ class ClearSiteServicesController {
     }
 
     // FAQ Accordion Triggers
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 7; i++) {
       const btn = document.getElementById(`faq-header-${i}`);
       if (btn) {
         btn.addEventListener('click', () => this.toggleFaq(i));
@@ -73,21 +73,7 @@ class ClearSiteServicesController {
     if (!this.waivers) return;
     
     const activeLang = window.ClearSiteI18n ? window.ClearSiteI18n.currentLang : 'en';
-    
-    // Render prohibition notice
-    const prohibitionsText = this.waivers.global_prohibitions 
-      ? (this.waivers.global_prohibitions[`notice_${activeLang}`] || this.waivers.global_prohibitions['notice_en'])
-      : '';
-    const elProhibitionsText = document.getElementById('prohibition-note-text');
-    if (elProhibitionsText) elProhibitionsText.innerText = prohibitionsText;
 
-    // Render a general legal waiver disclaimer notice
-    const elWaiverText = document.getElementById('waiver-note-text');
-    if (elWaiverText) {
-      elWaiverText.innerText = activeLang === 'fr'
-        ? "En utilisant nos services, vous acceptez de libérer les accès pour notre équipe de collecte. Pour les formules Rendez-vous à l'Écocentre et Partage de Main-d'Œuvre, vous acceptez d'accompagner notre véhicule à l'écocentre et d'utiliser votre allocation municipale."
-        : "By using our services, you agree to provide clear, safe access paths for our collection crew. For our Disposal Meeting and Full Co-Pilot tiers, you agree to accompany our vehicle to the eco-center and use your municipal collection allowance.";
-    }
 
     // Render individual tier waivers inside the open accordions
     for (let i = 1; i <= 4; i++) {
@@ -135,7 +121,7 @@ class ClearSiteServicesController {
   }
 
   toggleFaq(index) {
-    const faqCount = 5;
+    const faqCount = 7;
     for (let i = 1; i <= faqCount; i++) {
       const btn = document.getElementById(`faq-header-${i}`);
       const panel = document.getElementById(`faq-content-${i}`);
