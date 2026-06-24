@@ -1,0 +1,17 @@
+{
+  "region": "Montreal West Island",
+  "sectors": [
+    { "id": "ddo", "name": "Dollard-des-Ormeaux", "prefixes": ["H9B", "H9G", "H9A", "H9R"], "target_artery": "Boul. Saint-Jean", "ecocentre_route_km": 14 },
+    { "id": "pointe-claire", "name": "Pointe-Claire", "prefixes": ["H9R", "H9S"], "target_artery": "Boul. St-Charles & Highway 20", "ecocentre_route_km": 11 },
+    { "id": "beaconsfield", "name": "Beaconsfield", "prefixes": ["H9W"], "target_artery": "Highway 20 Exit 48", "ecocentre_route_km": 16 },
+    { "id": "kirkland", "name": "Kirkland", "prefixes": ["H9H"], "target_artery": "Voie de Service Transcanadienne", "ecocentre_route_km": 15 },
+    { "id": "dorval", "name": "Dorval", "prefixes": ["H9S", "H4Y"], "target_artery": "Boul. Bouchard & Highway 20", "ecocentre_route_km": 8 },
+    { "id": "baie-durfe", "name": "Baie-D'Urfé", "prefixes": ["H9X"], "target_artery": "Boul. Métropolitain", "ecocentre_route_km": 21 },
+    { "id": "ste-anne", "name": "Sainte-Anne-de-Bellevue", "prefixes": ["H9X"], "target_artery": "Highway 40 Exit 41", "ecocentre_route_km": 24 },
+    { "id": "senneville", "name": "Senneville", "prefixes": ["H9X"], "target_artery": "Chemin de Senneville", "ecocentre_route_km": 25 },
+    { "id": "pierrefonds", "name": "Pierrefonds-Roxboro", "prefixes": ["H8Y", "H9A", "H9H", "H9J"], "target_artery": "Boul. Pierrefonds", "ecocentre_route_km": 18 },
+    { "id": "ile-bizard", "name": "L'Île-Bizard", "prefixes": ["H9C"], "target_artery": "Pont Jacques-Bizard", "ecocentre_route_km": 22 },
+    { "id": "ste-genevieve", "name": "Sainte-Geneviève", "prefixes": ["H9H"], "target_artery": "Boul. Gouin Ouest", "ecocentre_route_km": 20 },
+    { "id": "st-laurent", "name": "Saint-Laurent", "prefixes": ["H4R", "H4L", "H4M", "H4N"], "target_artery": "Boul. Henri-Bourassa", "ecocentre_route_km": 2 }
+  ]
+}

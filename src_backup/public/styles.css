@@ -1,0 +1,190 @@
+/* ==========================================================================
+   Clear Site West Island - Mobile-First Premium Style Sheet
+   ========================================================================== */
+
+/* --- 1. Global Reset & Defaults (Mobile-First) --- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif !important;
+  background-color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+/* Force tabular numerical values to prevent layout jumping when metrics change */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  -webkit-font-variant-numeric: tabular-nums;
+}
+
+/* Block text selection on carousel arrows/indicators */
+.select-none {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* --- 2. Custom Scrollbar Styling (Webkit Only) --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+/* --- 3. Dynamic Cost Animation (Multi-Trip Safety Alert) --- */
+body.multi-trip-active #estimated-cost-display {
+  color: #FBBF24; /* Amber warn text color shift */
+  animation: pulseCost 2s infinite ease-in-out;
+}
+
+@keyframes pulseCost {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.94;
+    transform: scale(1.02);
+  }
+}
+
+/* --- 4. Interactive Elements (Sliders, Toggles, Buttons) --- */
+
+/* Custom touch-optimized range slider */
+input[type="range"] {
+  background: #E2E8F0;
+  height: 8px;
+  border-radius: 8px;
+  outline: none;
+  transition: background 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #10B981;
+  cursor: pointer;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.25), 0 2px 4px -2px rgba(16, 185, 129, 0.15);
+  -webkit-appearance: none;
+  border: 3px solid #FFFFFF;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #059669;
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.35), 0 4px 6px -4px rgba(16, 185, 129, 0.25);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(0.95);
+  background: #047857;
+}
+
+/* Language selector button active transitions */
+#lang-toggle button {
+  outline: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#lang-toggle button:active {
+  transform: scale(0.95);
+}
+
+/* Standard cards hover actions */
+.shadow-sm {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s ease;
+}
+
+.shadow-sm:hover {
+  border-color: rgba(16, 185, 129, 0.15);
+}
+
+/* --- 5. Full-Width Hero Carousel Styling --- */
+#carousel-frame {
+  background-repeat: no-repeat;
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- 6. Media Queries for Responsive Design (Mobile-First) --- */
+
+/* 6.1 Mobile-only constraints (< 640px) */
+@media (max-width: 639px) {
+  #carousel-frame {
+    background-position: 70% center !important; /* Shift focal point of background image for text readability */
+  }
+}
+
+/* 6.2 Tablet breakpoint (>= 640px) */
+@media (min-width: 640px) {
+  .shadow-sm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  }
+  
+  #carousel-frame {
+    background-position: center !important;
+  }
+}
+
+/* 6.3 Desktop breakpoint (>= 1024px) */
+@media (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .shadow-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: rgba(16, 185, 129, 0.25);
+  }
+}
+
+/* --- Accordion Panel Layout Transitions --- */
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-content > div {
+  overflow: hidden;
+}
+
+.accordion-content.expanded {
+  grid-template-rows: 1fr;
+}
+
+/* Chevron smooth rotation */
+.chevron-icon {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Calendar status colors and transitions */
+.calendar-day-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.calendar-day-card:hover {
+  transform: translateY(-2px);
+}

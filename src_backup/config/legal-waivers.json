@@ -1,0 +1,26 @@
+{
+  "global_prohibitions": {
+    "title_en": "Strictly Prohibited Volatile Materials",
+    "title_fr": "Matières Volatiles Strictement Interdites",
+    "notice_en": "For the safety of our crew and community compliance, ClearSite Solutions maintains a zero-tolerance transportation ban on hazardous household waste (HHW), including loose asbestos fibers, wet chemical lead paints, storage propane tanks, industrial solvents, or medical pollutants.",
+    "notice_fr": "Pour la sécurité de notre équipe et la conformité communautaire, ClearSite Solutions maintient une interdiction de transport absolue sur les résidus domestiques dangereux (RDD), y compris les fibres d'amiante libres, les peintures au plomb liquides, les réservoirs de propane, les solvants industriels ou les polluants médicaux."
+  },
+  "tier_waivers": {
+    "level_1_unprepared": {
+      "en": "Client grants full internal site access permissions to the ClearSite Solutions multi-man extraction crew to handle manual bagging and debris sorting.",
+      "fr": "Le client accorde des autorisations d'accès internes complètes à l'équipe d'extraction de ClearSite Solutions pour l'ensachage manuel et le tri des débris."
+    },
+    "level_2_curbside": {
+      "en": "Client guarantees all debris is positioned neatly at the external property perimeter or street line before dispatch arrival.",
+      "fr": "Le client garantit que tous les débris sont positionnés proprement en bordure de propriété ou de rue avant l'arrivée de l'équipe."
+    },
+    "level_3_meeting": {
+      "en": "Client agrees to independently transit to the designated environmental facility scale to verify residency allotments or settle gate weight-tonnage fees out-of-pocket.",
+      "fr": "Le client accepte de se rendre de manière autonome à la balance de l'écocentre désigné pour vérifier ses quotas de résidence ou régler les frais de pesée à ses frais."
+    },
+    "level_4_copilot": {
+      "en": "Client acknowledges they are booking a passenger-only co-pilot role for transit accompaniment and labor sharing. For insurance compliance, a licensed ClearSite professional will operate the vehicle at all times.",
+      "fr": "Le client reconnaît qu'il réserve un rôle de copilote passager pour l'accompagnement durant le transport et le partage de main-d'œuvre. Pour des raisons d'assurance, un professionnel agréé de ClearSite conduira le véhicule en tout temps."
+    }
+  }
+}

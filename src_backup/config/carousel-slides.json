@@ -1,0 +1,56 @@
+{
+  "slides": [
+    {
+      "tier_id": "level_1_unprepared",
+      "badge_en": "Premium Full-Service",
+      "badge_fr": "Service Complet Premium",
+      "badge_style": "bg-slate-100 text-gray-700",
+      "title_en": "Unprepared Pick-Up",
+      "title_fr": "Collecte Non Préparée",
+      "you_en": "Point at the mess and let us do the rest! No sorting, bagging, or moving heavy debris required.",
+      "you_fr": "Pointez simplement le désordre du doigt ! Aucun tri, ensachage ou déplacement de débris requis.",
+      "we_en": "Provide a multi-man crew, handle inside extraction, bag loose waste, pull nails, sweep up the site, and cover all commercial dumping fees.",
+      "we_fr": "Fournissons l'équipe, gérons l'extraction intérieure, ensachons, retirons les clous, balayons le chantier et couvrons tous les frais de décharge commerciale.",
+      "image_url": "./assets/hero-level1.png"
+    },
+    {
+      "tier_id": "level_2_curbside",
+      "badge_en": "Fast Perimeter Collection",
+      "badge_fr": "Collecte en Bordure Rapide",
+      "badge_style": "bg-slate-100 text-gray-700",
+      "title_en": "Curbside Collection",
+      "title_fr": "Collecte en Bordure de Rue",
+      "you_en": "Stage your renovation lumber or general junk neatly along the property line or driveway prior to pickup.",
+      "you_fr": "Déposez votre bois de construction ou vos encombrants proprement en bordure de terrain ou dans l'allée avant notre arrivée.",
+      "we_en": "Execute a high-speed loading sequence straight from the street curb. Fast, contactless service with zero tire tracks on your lawn.",
+      "we_fr": "Effectuons un chargement rapide directement depuis le trottoir. Service rapide et sans contact, sans aucune trace de pneu sur votre terrain.",
+      "image_url": "./assets/hero-level2.png"
+    },
+    {
+      "tier_id": "level_3_meeting",
+      "badge_en": "Most Popular Savings",
+      "badge_fr": "Économies Populaires",
+      "badge_style": "bg-emerald-100 text-emerald-800",
+      "title_en": "On-Site Disposal Meeting",
+      "title_fr": "Rendez-vous à l'Écocentre",
+      "you_en": "Meet our vehicle at the eco-center and use your municipal collection allowance for zero gate fees.",
+      "you_fr": "Retrouvez notre véhicule à l'écocentre local et utilisez votre allocation municipale pour éviter les frais d'entrée.",
+      "we_en": "Perform 100% of the on-site loading at your house independently, handle all driving, and meet you at the gate.",
+      "we_fr": "Chargeons 100% des débris à votre domicile de façon autonome, assurons le transport et vous retrouvons à l'entrée.",
+      "image_url": "./assets/hero-level3.png"
+    },
+    {
+      "tier_id": "level_4_copilot",
+      "badge_en": "Maximum Economy Helper",
+      "badge_fr": "Aide Économique Maximale",
+      "badge_style": "bg-emerald-500 text-white",
+      "title_en": "Full Co-Pilot Labor Share",
+      "title_fr": "Partage de Main-d'Œuvre",
+      "you_en": "Accompany our driver as co-pilot, assist with loading/sorting, and use your municipal allowance at the eco-center.",
+      "you_fr": "Accompagnez notre chauffeur en tant que copilote, aidez au chargement/tri, et utilisez votre allocation municipale à l'écocentre.",
+      "we_en": "Provide the heavy-duty 12ft truck, handle all the driving, and match your loading effort 1-for-1.",
+      "we_fr": "Fournissons le camion de 12 pieds, assurons toute la conduite et doublons votre effort de chargement à parts égales.",
+      "image_url": "./assets/hero-level4.png"
+    }
+  ]
+}

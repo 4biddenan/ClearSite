@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site_title">Junk Removal &amp; Post-Renovation Debris Logistics | ClearSite Solutions</title>
+  <meta name="description" content="Premium and budget-friendly site cleanup services in Montreal West Island. Choose from 4 customizable service tiers matching your budget to our labor.">
+  
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  
+  <!-- Premium Typography Integration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brandNavy: '#1A365D',
+            brandEmerald: '#10B981',
+            brandSlate: '#F1F5F9'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="min-h-full flex flex-col text-gray-700 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Icon System Definitions -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  </svg>
+
+  <!-- Sticky Premium Header -->
+  <header class="bg-white border-b border-slate-200/80 sticky top-0 z-50 backdrop-blur-md bg-white/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="./assets/logo_simple.svg" alt="Clear Site" class="h-10 w-auto object-contain">
+        <div class="flex flex-col justify-center border-l border-slate-200 pl-3 h-8">
+          <span class="text-[10px] font-extrabold text-brandEmerald tracking-widest uppercase mt-0.5" data-i18n="logo_subtitle">West Island</span>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <!-- Navigation Link to Services page -->
+        <a href="./services.html" class="text-xs font-bold text-brandNavy hover:text-brandEmerald transition-all" data-i18n="nav_services_faq">Services & FAQ</a>
+        
+        <!-- Bilingual Language Selector Toggle -->
+        <div class="flex bg-slate-100 p-1 rounded-xl border border-slate-200/50" id="lang-toggle">
+          <button id="lang-toggle-en" class="px-3.5 py-1.5 text-xs font-black uppercase rounded-lg bg-brandEmerald text-white shadow-sm transition-all focus:outline-none">EN</button>
+          <button id="lang-toggle-fr" class="px-3.5 py-1.5 text-xs font-bold uppercase rounded-lg text-gray-500 hover:text-brandNavy transition-all focus:outline-none">FR</button>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Width Hero Section with Active Carousel Slide -->
+  <section id="carousel-frame" class="relative w-full border-b border-slate-200/80 transition-all duration-300 bg-slate-50 min-h-[380px] sm:min-h-[460px] flex items-center">
+    <!-- Overlay Gradient for Text Contrast and Blending -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/95 sm:via-slate-50/90 to-transparent z-10"></div>
+    
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-20 flex flex-col justify-between h-full">
+      <div id="carousel-active-content" class="transition-opacity duration-200 opacity-100 max-w-xl space-y-4">
+        <div class="flex">
+          <span id="slide-badge" class="px-3 py-1 text-xs font-bold uppercase rounded-full bg-emerald-100 text-emerald-800 shadow-sm">Popular Savings</span>
+        </div>
+        
+        <h1 id="slide-title" class="text-3xl sm:text-4xl lg:text-5xl font-black text-brandNavy tracking-tight leading-tight">
+          On-Site Disposal Meeting
+        </h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-4 border-t border-slate-200/50">
+          <div class="bg-white/90 backdrop-blur-sm p-4 rounded-xl border border-slate-200/40 shadow-sm">
+            <span class="font-bold text-gray-400 uppercase tracking-wider text-[9px] block mb-1" data-i18n="you_label">You:</span>
+            <p id="slide-copy-you" class="text-gray-700 font-medium leading-relaxed">Meet our truck at the disposal facility gate with your resident ID to unlock free municipal credits.</p>
+          </div>
+          <div class="bg-emerald-50/30 backdrop-blur-sm p-4 rounded-xl border border-emerald-100/20 shadow-sm">
+            <span class="font-bold text-brandEmerald uppercase tracking-wider text-[9px] block mb-1" data-i18n="we_label">We:</span>
+            <p id="slide-copy-we" class="text-gray-700 font-medium leading-relaxed">Load the vehicle independently at your address and handle all professional logistics transit safely.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between border-t border-slate-200/30 pt-6 mt-8 max-w-xl">
+        <div class="flex space-x-2">
+          <button onclick="window.ClearSiteCarousel.prev()" class="w-11 h-11 inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white hover:bg-slate-50 active:scale-95 transition-all text-brandNavy font-bold shadow-sm focus:outline-none" aria-label="Previous service tier">←</button>
+          <button onclick="window.ClearSiteCarousel.next()" class="w-11 h-11 inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white hover:bg-slate-50 active:scale-95 transition-all text-brandNavy font-bold shadow-sm focus:outline-none" aria-label="Next service tier">→</button>
+        </div>
+        <div id="carousel-indicators" class="flex space-x-3 py-2 select-none">
+          <span onclick="window.ClearSiteCarousel.goTo(0)" class="w-2.5 h-2.5 rounded-full bg-slate-300 cursor-pointer transition-all"></span>
+          <span onclick="window.ClearSiteCarousel.goTo(1)" class="w-2.5 h-2.5 rounded-full bg-slate-300 cursor-pointer transition-all"></span>
+          <span onclick="window.ClearSiteCarousel.goTo(2)" class="w-2.5 h-2.5 rounded-full bg-brandEmerald scale-125 cursor-pointer transition-all"></span>
+          <span onclick="window.ClearSiteCarousel.goTo(3)" class="w-2.5 h-2.5 rounded-full bg-slate-300 cursor-pointer transition-all"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Responsive Grid Layout -->
+  <main class="flex-grow max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-start py-8 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Left Column: Detailed Service Information & Discharges -->
+    <section class="md:col-span-7 space-y-6">
+      
+      <!-- Services Detailed Presentation -->
+      <div class="space-y-4">
+        <h2 class="text-2xl font-black text-brandNavy tracking-tight" data-i18n="services_section_title">Our Service Tiers</h2>
+        <p class="text-xs text-gray-500 leading-relaxed" data-i18n="services_section_desc">Choose from 4 customized service tiers matching your budget to our labor. Dynamic pricing calculations adapt to the active tier selected above.</p>
+        
+        <div class="grid grid-cols-1 gap-4">
+          <!-- Tier 1 Card -->
+          <div id="service-card-level_1_unprepared" class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm space-y-3">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="text-base font-black text-brandNavy" data-i18n="tier_1_title">Unprepared Pick-Up</h3>
+              <span class="px-2.5 py-0.5 text-[10px] font-bold uppercase rounded-full bg-slate-100 text-gray-700" data-i18n="tier_1_badge">Premium Full-Service</span>
+            </div>
+            <div class="text-xs space-y-2 text-gray-600 border-t border-slate-100 pt-3">
+              <p><strong class="text-gray-800" data-i18n="you_label">You:</strong> <span data-i18n="tier_1_you">Point at the mess and let us do the rest! No sorting, bagging, or moving heavy debris required.</span></p>
+              <p><strong class="text-brandEmerald" data-i18n="we_label">We:</strong> <span data-i18n="tier_1_we">Provide a multi-man crew, handle inside extraction, bag loose waste, pull nails, sweep up the site, and cover all commercial dumping fees.</span></p>
+            </div>
+          </div>
+          
+          <!-- Tier 2 Card -->
+          <div id="service-card-level_2_curbside" class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm space-y-3">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="text-base font-black text-brandNavy" data-i18n="tier_2_title">Curbside Collection</h3>
+              <span class="px-2.5 py-0.5 text-[10px] font-bold uppercase rounded-full bg-slate-100 text-gray-700" data-i18n="tier_2_badge">Fast Perimeter Collection</span>
+            </div>
+            <div class="text-xs space-y-2 text-gray-600 border-t border-slate-100 pt-3">
+              <p><strong class="text-gray-800" data-i18n="you_label">You:</strong> <span data-i18n="tier_2_you">Stage your renovation lumber or general junk neatly along the property line or driveway prior to pickup.</span></p>
+              <p><strong class="text-brandEmerald" data-i18n="we_label">We:</strong> <span data-i18n="tier_2_we">Execute a high-speed loading sequence straight from the street curb. Fast, contactless service with zero tire tracks on your lawn.</span></p>
+            </div>
+          </div>
+          
+          <!-- Tier 3 Card (Active styling indicator) -->
+          <div id="service-card-level_3_meeting" class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm border-l-4 border-l-brandEmerald space-y-3">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="text-base font-black text-brandNavy" data-i18n="tier_3_title">On-Site Disposal Meeting</h3>
+              <span class="px-2.5 py-0.5 text-[10px] font-bold uppercase rounded-full bg-emerald-100 text-emerald-800" data-i18n="tier_3_badge">Most Popular Savings</span>
+            </div>
+            <div class="text-xs space-y-2 text-gray-600 border-t border-slate-100 pt-3">
+              <p><strong class="text-gray-800" data-i18n="you_label">You:</strong> <span data-i18n="tier_3_you">Meet our vehicle at the eco-center and use your municipal collection allowance for zero gate fees.</span></p>
+              <p><strong class="text-brandEmerald" data-i18n="we_label">We:</strong> <span data-i18n="tier_3_we">Perform 100% of the on-site loading at your house independently, handle all driving, and meet you at the gate.</span></p>
+            </div>
+          </div>
+          
+          <!-- Tier 4 Card -->
+          <div id="service-card-level_4_copilot" class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm space-y-3">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="text-base font-black text-brandNavy" data-i18n="tier_4_title">Full Co-Pilot Labor Share</h3>
+              <span class="px-2.5 py-0.5 text-[10px] font-bold uppercase rounded-full bg-emerald-500 text-white" data-i18n="tier_4_badge">Maximum Economy Helper</span>
+            </div>
+            <div class="text-xs space-y-2 text-gray-600 border-t border-slate-100 pt-3">
+              <p><strong class="text-gray-800" data-i18n="you_label">You:</strong> <span data-i18n="tier_4_you">Accompany our driver as co-pilot, assist with loading/sorting, and use your municipal allowance at the eco-center.</span></p>
+              <p><strong class="text-brandEmerald" data-i18n="we_label">We:</strong> <span data-i18n="tier_4_we">Provide the heavy-duty 12ft truck, handle all the driving, and match your loading effort 1-for-1.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal Waivers & Dynamic Operations Discharges -->
+      <div id="legal-waiver" class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
+        <h3 class="text-xs font-black text-brandNavy uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center space-x-2" data-i18n="waiver_section_title">
+          Operations Safety &amp; Discharges
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs">
+          <div class="space-y-2">
+            <h4 class="font-extrabold text-gray-800 tracking-wide" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note</h4>
+            <p id="waiver-note-text" class="text-gray-500 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-200/30 min-h-[60px]"></p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="font-extrabold text-rose-800 tracking-wide" data-i18n="prohibition_note_title">Strictly Prohibited Volatile Materials</h4>
+            <p id="prohibition-note-text" class="text-rose-600 leading-relaxed bg-rose-50/50 p-3 rounded-xl border border-rose-100/50 min-h-[60px]"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety & Scheduling Breakout Info cards -->
+      <div id="hours-operation" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-4 bg-white border border-slate-200/80 rounded-2xl text-xs space-y-1.5 shadow-sm">
+          <h4 class="font-extrabold text-brandNavy flex items-center" data-i18n="card_monday_title">🚨 The Monday Calendar Breakout</h4>
+          <p class="text-gray-500 leading-relaxed" data-i18n="card_monday_desc">Municipal ecocentres remain strictly <em>closed on Mondays</em>. Disposal Meeting and Full Co-Pilot tiers operate smoothly Tuesday through Sunday windows. Monday pick-ups route via standard Commercial lines.</p>
+        </div>
+        <div id="driveway-tire" class="p-4 bg-white border border-slate-200/80 rounded-2xl text-xs space-y-1.5 shadow-sm">
+          <h4 class="font-extrabold text-brandNavy flex items-center" data-i18n="card_tire_title">🛡️ Driveway Tire Protection Guarantee</h4>
+          <p class="text-gray-500 leading-relaxed" data-i18n="card_tire_desc">Before our logistics truck leaves your site, our crew executes a rolling high-intensity magnetic sweep to clear loose framing nails and sharp post-demolition shards cleanly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: Sticky Estimator & Action Selection Panels -->
+    <section class="md:col-span-5 w-full md:sticky md:top-24">
+      <div class="bg-white rounded-3xl border-2 border-slate-200/80 shadow-xl overflow-hidden">
+        
+        <div class="flex border-b border-slate-200 bg-slate-50 text-[10px] font-extrabold uppercase tracking-widest text-center">
+          <button id="tab-btn-quote" onclick="switchControlPanelState('quote')" class="flex-1 py-4 border-b-2 border-brandEmerald text-brandNavy bg-white transition-all focus:outline-none" data-i18n="tab_quote">Price Check</button>
+          <button id="tab-btn-book" onclick="switchControlPanelState('book')" class="flex-1 py-4 border-b-2 border-transparent text-gray-400 hover:text-gray-700 transition-all focus:outline-none" data-i18n="tab_book">Live Schedule</button>
+          <button id="tab-btn-contact" onclick="switchControlPanelState('contact')" class="flex-1 py-4 border-b-2 border-transparent text-gray-400 hover:text-gray-700 transition-all focus:outline-none" data-i18n="tab_contact">Speak to Rep</button>
+        </div>
+
+        <div class="p-6">
+          <div id="panel-state-quote" class="space-y-5">
+            <div>
+              <label class="block text-[10px] font-black text-brandNavy uppercase tracking-widest mb-2" data-i18n="label_sector">Target Sector Municipality</label>
+              <select id="sel-town" class="w-full rounded-xl border-slate-300 border p-3 text-sm font-semibold bg-slate-50 focus:border-brandNavy focus:outline-none focus:ring-1 focus:ring-brandNavy transition-all">
+                <!-- Populated Dynamically from territory-matrix.json -->
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-1.5">
+                <label class="block text-[10px] font-black text-brandNavy uppercase tracking-widest" data-i18n="label_volume">Estimated Load Volume ($v$)</label>
+                <span class="text-sm font-mono font-bold text-brandNavy bg-slate-100 px-2 py-0.5 rounded-md"><span id="lbl-volume">1</span> m³</span>
+              </div>
+              <input type="range" id="input-volume" min="1" max="12" value="1" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brandEmerald">
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[10px] font-black text-brandNavy uppercase tracking-widest mb-2" data-i18n="label_stairs">Stair Flights</label>
+                <select id="sel-stairs" class="w-full rounded-xl border-slate-300 border p-2.5 text-xs bg-white focus:border-brandNavy focus:outline-none transition-all">
+                  <option value="0" data-i18n="stairs_ground">Ground / Driveway</option>
+                  <option value="1" data-i18n="stairs_1flight">1 Flight Inside</option>
+                  <option value="2" data-i18n="stairs_2flights">2+ Flights Inside</option>
+                </select>
+              </div>
+              <div class="flex items-center pt-5">
+                <label class="inline-flex items-center cursor-pointer select-none text-xs font-extrabold text-brandNavy">
+                  <input type="checkbox" id="chk-masonry" class="sr-only peer">
+                  <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brandEmerald relative shadow-inner"></div>
+                  <span class="ml-2.5" data-i18n="label_masonry">Heavy Brick/Concrete</span>
+                </label>
+              </div>
+            </div>
+
+            <div id="safety-alert-gate" class="hidden p-3.5 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-800 space-y-1" data-i18n="safety_alert_gate">
+              <strong>⚠️ Structural Axle Safety Threshold Reached:</strong> Dense debris cannot exceed 3 m³ per load. The system has automatically restructured this deployment into multiple safety-compliant trips.
+            </div>
+
+            <div class="p-4 bg-brandNavy text-white rounded-2xl flex items-center justify-between shadow-inner">
+              <div class="text-[10px] font-black uppercase tracking-wider text-slate-300" data-i18n="active_estimate">Active Tier Estimate:</div>
+              <div id="estimated-cost-display" class="text-2xl font-bold font-mono tracking-tight tabular-nums text-brandEmerald shadow-sm">$0.00 CAD</div>
+            </div>
+
+            <button onclick="switchControlPanelState('book')" class="w-full py-4 px-4 font-bold text-white bg-brandEmerald hover:bg-emerald-600 active:scale-[0.99] rounded-xl shadow-md shadow-emerald-500/10 transition-all text-center text-sm" data-i18n="btn_check_availability">
+              Check Booking Availability →
+            </button>
+          </div>
+
+          <div id="panel-state-book" class="hidden space-y-4">
+            <h4 class="text-[10px] font-black text-brandNavy uppercase tracking-widest mb-2" data-i18n="label_schedule">Select Real-Time Route Window</h4>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-bold">
+              <div class="p-3 border border-slate-200 rounded-xl bg-slate-100 text-gray-400 cursor-not-allowed line-through">
+                <span data-i18n="day_mon">Mon</span><br><span class="text-[10px] font-normal" data-i18n="day_closed">Closed</span>
+              </div>
+              <div class="p-3 border border-amber-300 rounded-xl bg-amber-50 text-amber-900 cursor-pointer shadow-sm relative hover:bg-amber-100/50 transition-all">
+                <span class="absolute -top-1.5 left-1/2 -translate-x-1/2 px-1.5 py-0.5 bg-amber-500 text-white text-[8px] rounded font-black uppercase leading-none shadow-sm" data-i18n="day_slots">1 Slot Left</span>
+                <span data-i18n="day_tue">Tue</span><br><span class="text-[10px] font-normal" data-i18n="day_standard">Standard</span>
+              </div>
+              <div class="p-3 border border-emerald-300 rounded-xl bg-emerald-50 text-emerald-900 cursor-pointer shadow-sm hover:bg-emerald-100/50 transition-all">
+                <span data-i18n="day_wed">Wed</span><br><span class="text-[10px] font-normal" data-i18n="day_open">Open</span>
+              </div>
+            </div>
+            <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-gray-500 leading-relaxed" data-i18n="schedule_desc">
+              To minimize fuel overhead, we schedule a maximum of <strong>2 operations daily per vehicle unit</strong>. Lock your appointment to reserve an on-site representative review.
+            </div>
+            <button onclick="alert(window.ClearSiteI18n ? window.ClearSiteI18n.translations[window.ClearSiteI18n.currentLang]['alert_booked'] : 'Appointment Request Lodged.')" class="w-full py-4 px-4 font-bold text-white bg-brandNavy hover:bg-blue-950 rounded-xl transition-all text-center text-sm" data-i18n="btn_lock_appointment">
+              Lock My Appointment Slot
+            </button>
+          </div>
+
+          <div id="panel-state-contact" class="hidden space-y-4">
+            <p class="text-xs text-gray-500 leading-relaxed" data-i18n="contact_desc">
+              Are you a general contractor coordinating a major commercial cleanout or residential home demo? Leave your details below and an active dispatch agent will call you directly.
+            </p>
+            <div class="space-y-3">
+              <input type="text" data-i18n="input_name" placeholder="Contact Name / Project Coordinator" class="w-full rounded-xl border-slate-300 border p-3 text-sm focus:border-brandNavy focus:outline-none focus:ring-1 focus:ring-brandNavy transition-all">
+              <input type="tel" data-i18n="input_phone" placeholder="Direct Cellular Phone (514) 000-0000" class="w-full rounded-xl border-slate-300 border p-3 text-sm focus:border-brandNavy focus:outline-none focus:ring-1 focus:ring-brandNavy transition-all">
+            </div>
+            <button onclick="alert(window.ClearSiteI18n ? window.ClearSiteI18n.translations[window.ClearSiteI18n.currentLang]['alert_callback'] : 'Callback sequence authorized.')" class="w-full py-4 px-4 font-bold text-white bg-brandNavy hover:bg-blue-950 rounded-xl transition-all text-center text-sm" data-i18n="btn_callback">
+              Request Agent Callback within 15 mins
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Detailed Footer with Operational Anchor Links -->
+  <footer class="bg-brandNavy text-slate-400 text-xs py-12 border-t border-blue-950 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-8 border-b border-blue-900/40">
+      
+      <!-- Footer Logo and Tagline -->
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2 text-white font-bold">
+          <img src="./assets/logo_simple.svg" alt="Clear Site" class="h-6 w-auto object-contain">
+          <span class="text-xs font-bold text-brandEmerald tracking-wider uppercase border-l border-blue-900/60 pl-2 ml-1" data-i18n="logo_subtitle">West Island</span>
+        </div>
+        <p class="text-[11px] leading-relaxed text-slate-400" data-i18n="tagline_desc">Welcome to a cleaner, more efficient junk removal experience.</p>
+      </div>
+      
+      <!-- Quick Anchor Links -->
+      <div class="space-y-3">
+        <h4 class="font-extrabold text-white uppercase tracking-wider text-[10px]" data-i18n="footer_links_title">Operational Resources</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#legal-waiver" class="hover:text-brandEmerald transition-all" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note</a></li>
+          <li><a href="#hours-operation" class="hover:text-brandEmerald transition-all" data-i18n="card_monday_title">🚨 The Monday Calendar Breakout</a></li>
+          <li><a href="#sel-town" class="hover:text-brandEmerald transition-all" data-i18n="footer_link_calc">Price Estimation Tool</a></li>
+          <li><a href="./services.html" class="hover:text-brandEmerald transition-all" data-i18n="nav_services_faq">Services & FAQ</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="space-y-3">
+        <h4 class="font-extrabold text-white uppercase tracking-wider text-[10px]" data-i18n="footer_contact_title">Contact Dispatch</h4>
+        <p class="text-[11px] text-slate-400 leading-relaxed">
+          Phone: <a href="tel:5140000000" class="hover:text-brandEmerald transition-all">(514) 000-0000</a><br>
+          Email: <a href="mailto:info@clearsite.ca" class="hover:text-brandEmerald transition-all">info@clearsite.ca</a>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Legal Notice and Service Network Area -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-4">
+      <div class="flex items-center space-x-2 text-white font-bold flex-wrap gap-y-1">
+        <span data-i18n="footer_copyright">© 2026 ClearSite Solutions Inc.</span>
+        <span class="text-brandEmerald">•</span>
+        <span data-i18n="footer_tagline">Residential &amp; Commercial Renovation Debris Logistics</span>
+      </div>
+      <p class="max-w-2xl text-[11px] text-slate-400 leading-relaxed">
+        <span data-i18n="footer_service_area" class="font-bold">Service Area Network:</span> Dollard-des-Ormeaux, Pointe-Claire, Beaconsfield, Kirkland, Dorval, Baie-D'Urfé, Sainte-Anne-de-Bellevue, Senneville, Pierrefonds-Roxboro, L'Île-Bizard, Sainte-Geneviève, and Saint-Laurent.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts Loading -->
+  <script src="../js/i18n.js"></script>
+  <script src="../js/pricing.js"></script>
+  <script src="../js/carousel.js"></script>
+  <script>
+    // Tab Controller State Machine
+    function switchControlPanelState(targetState) {
+      const tabs = ['quote', 'book', 'contact'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        const panel = document.getElementById(`panel-state-${t}`);
+        if (t === targetState) {
+          btn.className = "flex-1 py-4 border-b-2 border-brandEmerald text-brandNavy bg-white transition-all focus:outline-none";
+          panel.classList.remove('hidden');
+        } else {
+          btn.className = "flex-1 py-4 border-b-2 border-transparent text-gray-400 hover:text-gray-700 transition-all focus:outline-none";
+          panel.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

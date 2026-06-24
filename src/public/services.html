@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="services_page_title">Services Details, Rates &amp; Operational FAQ | ClearSite Solutions</title>
+  <meta name="description" content="Detailed service descriptions, operating schedules, legal waivers, and FAQs for Clear Site West Island junk removal.">
+  
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  
+  <!-- Premium Typography Integration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brandNavy: '#1A365D',
+            brandEmerald: '#10B981',
+            brandSlate: '#F1F5F9'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="min-h-full flex flex-col text-gray-700 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Sticky Premium Header -->
+  <header class="bg-white border-b border-slate-200/80 sticky top-0 z-50 backdrop-blur-md bg-white/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center space-x-3 hover:opacity-90 transition-all">
+        <img src="./assets/logo_simple.svg" alt="Clear Site" class="h-10 w-auto object-contain">
+        <div class="flex flex-col justify-center border-l border-slate-200 pl-3 h-8">
+          <span class="text-[10px] font-extrabold text-brandEmerald tracking-widest uppercase mt-0.5" data-i18n="logo_subtitle">West Island</span>
+        </div>
+      </a>
+      <div class="flex items-center space-x-4">
+        <!-- Navigation Link back to home -->
+        <a href="./index.html" class="text-xs font-bold text-brandNavy hover:text-brandEmerald transition-all" data-i18n="nav_home">Back to Estimator</a>
+        
+        <!-- Bilingual Language Selector Toggle -->
+        <div class="flex bg-slate-100 p-1 rounded-xl border border-slate-200/50" id="lang-toggle">
+          <button id="lang-toggle-en" class="px-3.5 py-1.5 text-xs font-black uppercase rounded-lg bg-brandEmerald text-white shadow-sm transition-all focus:outline-none">EN</button>
+          <button id="lang-toggle-fr" class="px-3.5 py-1.5 text-xs font-bold uppercase rounded-lg text-gray-500 hover:text-brandNavy transition-all focus:outline-none">FR</button>
+        </div>
+        <div class="hidden md:block text-xs font-bold text-brandNavy bg-slate-100 px-3 py-2 rounded-full tracking-wide border border-slate-200/40" data-i18n="hub_badge">
+          📍 West Island Logistics Hub
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-5xl w-full mx-auto py-10 px-4 sm:px-6 lg:px-8 space-y-12">
+    
+    <!-- Hero Intro Header -->
+    <section class="text-center max-w-3xl mx-auto space-y-4">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brandNavy tracking-tight leading-tight" data-i18n="services_page_heading">
+        Clear Site Services &amp; Logistics Details
+      </h1>
+      <p class="text-sm sm:text-base text-gray-500 leading-relaxed font-medium" data-i18n="services_page_subheading">
+        Learn how our 4-tier service tier matching system saves you money by adapting our labor to your physical contribution.
+      </p>
+    </section>
+
+    <!-- Services Accordion Stack Piece -->
+    <section class="space-y-4">
+      <h2 class="text-xl sm:text-2xl font-black text-brandNavy tracking-tight pb-2 border-b border-slate-200" data-i18n="services_section_title">
+        Our Service Tiers
+      </h2>
+      
+      <div class="space-y-4" id="services-accordion-group">
+        
+        <!-- Accordion Card 1 -->
+        <div id="service-card-1" class="bg-white border border-slate-200/80 rounded-2xl shadow-sm transition-all duration-300">
+          <button id="accordion-header-1" class="w-full text-left p-5 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="accordion-content-1">
+            <div class="flex items-center space-x-3 flex-wrap gap-y-2">
+              <span class="text-base sm:text-lg font-black text-brandNavy" data-i18n="tier_1_title">Unprepared Pick-Up</span>
+              <span class="px-2.5 py-0.5 text-[10px] sm:text-xs font-bold uppercase rounded-full bg-slate-100 text-gray-600" data-i18n="tier_1_badge">Premium Full-Service</span>
+            </div>
+            <svg id="chevron-1" class="chevron-icon w-5 h-5 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          
+          <div id="accordion-content-1" class="accordion-content overflow-hidden" role="region" aria-labelledby="accordion-header-1">
+            <div>
+              <div class="p-6 border-t border-slate-100 bg-slate-50/50 rounded-b-2xl grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                <div class="bg-white p-5 rounded-xl border border-slate-200/50 shadow-sm space-y-2">
+                  <span class="font-extrabold text-gray-400 uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="you_label">You:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_1_you">Point at the mess and let us do the rest! No sorting, bagging, or moving heavy debris required.</p>
+                </div>
+                <div class="bg-emerald-50/20 p-5 rounded-xl border border-emerald-100/30 shadow-sm space-y-2">
+                  <span class="font-extrabold text-brandEmerald uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="we_label">We:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_1_we">Provide a multi-man crew, handle inside extraction, bag loose waste, pull nails, sweep up the site, and cover all commercial dumping fees.</p>
+                </div>
+                <div class="md:col-span-2 p-4 bg-slate-100/55 rounded-xl border border-slate-200/40 text-gray-500 font-medium">
+                  <span class="font-extrabold text-brandNavy uppercase tracking-wider text-[10px] sm:text-[11px] block mb-1" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note:</span>
+                  <p id="tier-waiver-text-1" class="text-gray-500 leading-relaxed text-[11px] sm:text-xs"></p>
+                </div>
+                <div class="md:col-span-2 flex justify-center pt-2">
+                  <a href="./index.html" class="w-full sm:w-auto px-6 py-2.5 bg-brandNavy hover:bg-blue-950 text-white font-bold rounded-lg text-center shadow-md transition-all text-xs" data-i18n="nav_home">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Card 2 -->
+        <div id="service-card-2" class="bg-white border border-slate-200/80 rounded-2xl shadow-sm transition-all duration-300">
+          <button id="accordion-header-2" class="w-full text-left p-5 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="accordion-content-2">
+            <div class="flex items-center space-x-3 flex-wrap gap-y-2">
+              <span class="text-base sm:text-lg font-black text-brandNavy" data-i18n="tier_2_title">Curbside Collection</span>
+              <span class="px-2.5 py-0.5 text-[10px] sm:text-xs font-bold uppercase rounded-full bg-slate-100 text-gray-600" data-i18n="tier_2_badge">Fast Perimeter Collection</span>
+            </div>
+            <svg id="chevron-2" class="chevron-icon w-5 h-5 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          
+          <div id="accordion-content-2" class="accordion-content overflow-hidden" role="region" aria-labelledby="accordion-header-2">
+            <div>
+              <div class="p-6 border-t border-slate-100 bg-slate-50/50 rounded-b-2xl grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                <div class="bg-white p-5 rounded-xl border border-slate-200/50 shadow-sm space-y-2">
+                  <span class="font-extrabold text-gray-400 uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="you_label">You:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_2_you">Stage your renovation lumber or general junk neatly along the property line or driveway prior to pickup.</p>
+                </div>
+                <div class="bg-emerald-50/20 p-5 rounded-xl border border-emerald-100/30 shadow-sm space-y-2">
+                  <span class="font-extrabold text-brandEmerald uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="we_label">We:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_2_we">Execute a high-speed loading sequence straight from the street curb. Fast, contactless service with zero tire tracks on your lawn.</p>
+                </div>
+                <div class="md:col-span-2 p-4 bg-slate-100/55 rounded-xl border border-slate-200/40 text-gray-500 font-medium">
+                  <span class="font-extrabold text-brandNavy uppercase tracking-wider text-[10px] sm:text-[11px] block mb-1" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note:</span>
+                  <p id="tier-waiver-text-2" class="text-gray-500 leading-relaxed text-[11px] sm:text-xs"></p>
+                </div>
+                <div class="md:col-span-2 flex justify-center pt-2">
+                  <a href="./index.html" class="w-full sm:w-auto px-6 py-2.5 bg-brandNavy hover:bg-blue-950 text-white font-bold rounded-lg text-center shadow-md transition-all text-xs" data-i18n="nav_home">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Card 3 -->
+        <div id="service-card-3" class="bg-white border border-slate-200/80 rounded-2xl shadow-sm transition-all duration-300">
+          <button id="accordion-header-3" class="w-full text-left p-5 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="accordion-content-3">
+            <div class="flex items-center space-x-3 flex-wrap gap-y-2">
+              <span class="text-base sm:text-lg font-black text-brandNavy" data-i18n="tier_3_title">On-Site Disposal Meeting</span>
+              <span class="px-2.5 py-0.5 text-[10px] sm:text-xs font-bold uppercase rounded-full bg-emerald-100 text-emerald-800" data-i18n="tier_3_badge">Most Popular Savings</span>
+            </div>
+            <svg id="chevron-3" class="chevron-icon w-5 h-5 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          
+          <div id="accordion-content-3" class="accordion-content overflow-hidden" role="region" aria-labelledby="accordion-header-3">
+            <div>
+              <div class="p-6 border-t border-slate-100 bg-slate-50/50 rounded-b-2xl grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                <div class="bg-white p-5 rounded-xl border border-slate-200/50 shadow-sm space-y-2">
+                  <span class="font-extrabold text-gray-400 uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="you_label">You:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_3_you">Meet our vehicle at the eco-center and use your municipal collection allowance for zero gate fees.</p>
+                </div>
+                <div class="bg-emerald-50/20 p-5 rounded-xl border border-emerald-100/30 shadow-sm space-y-2">
+                  <span class="font-extrabold text-brandEmerald uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="we_label">We:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_3_we">Perform 100% of the on-site loading at your house independently, handle all driving, and meet you at the gate.</p>
+                </div>
+                <div class="md:col-span-2 p-4 bg-slate-100/55 rounded-xl border border-slate-200/40 text-gray-500 font-medium">
+                  <span class="font-extrabold text-brandNavy uppercase tracking-wider text-[10px] sm:text-[11px] block mb-1" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note:</span>
+                  <p id="tier-waiver-text-3" class="text-gray-500 leading-relaxed text-[11px] sm:text-xs"></p>
+                </div>
+                <div class="md:col-span-2 flex justify-center pt-2">
+                  <a href="./index.html" class="w-full sm:w-auto px-6 py-2.5 bg-brandNavy hover:bg-blue-950 text-white font-bold rounded-lg text-center shadow-md transition-all text-xs" data-i18n="nav_home">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Card 4 -->
+        <div id="service-card-4" class="bg-white border border-slate-200/80 rounded-2xl shadow-sm transition-all duration-300">
+          <button id="accordion-header-4" class="w-full text-left p-5 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="accordion-content-4">
+            <div class="flex items-center space-x-3 flex-wrap gap-y-2">
+              <span class="text-base sm:text-lg font-black text-brandNavy" data-i18n="tier_4_title">Full Co-Pilot Labor Share</span>
+              <span class="px-2.5 py-0.5 text-[10px] sm:text-xs font-bold uppercase rounded-full bg-emerald-500 text-white" data-i18n="tier_4_badge">Maximum Economy Helper</span>
+            </div>
+            <svg id="chevron-4" class="chevron-icon w-5 h-5 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          
+          <div id="accordion-content-4" class="accordion-content overflow-hidden" role="region" aria-labelledby="accordion-header-4">
+            <div>
+              <div class="p-6 border-t border-slate-100 bg-slate-50/50 rounded-b-2xl grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+                <div class="bg-white p-5 rounded-xl border border-slate-200/50 shadow-sm space-y-2">
+                  <span class="font-extrabold text-gray-400 uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="you_label">You:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_4_you">Accompany our driver as co-pilot, assist with loading/sorting, and use your municipal allowance at the eco-center.</p>
+                </div>
+                <div class="bg-emerald-50/20 p-5 rounded-xl border border-emerald-100/30 shadow-sm space-y-2">
+                  <span class="font-extrabold text-brandEmerald uppercase tracking-widest text-[10px] sm:text-[11px] block" data-i18n="we_label">We:</span>
+                  <p class="text-gray-600 leading-relaxed font-medium" data-i18n="tier_4_we">Provide the heavy-duty 12ft truck, handle all the driving, and match your loading effort 1-for-1.</p>
+                </div>
+                <div class="md:col-span-2 p-4 bg-slate-100/55 rounded-xl border border-slate-200/40 text-gray-500 font-medium">
+                  <span class="font-extrabold text-brandNavy uppercase tracking-wider text-[10px] sm:text-[11px] block mb-1" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note:</span>
+                  <p id="tier-waiver-text-4" class="text-gray-500 leading-relaxed text-[11px] sm:text-xs"></p>
+                </div>
+                <div class="md:col-span-2 flex justify-center pt-2">
+                  <a href="./index.html" class="w-full sm:w-auto px-6 py-2.5 bg-brandNavy hover:bg-blue-950 text-white font-bold rounded-lg text-center shadow-md transition-all text-xs" data-i18n="nav_home">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Weekly Operations Calendar Grid -->
+    <section class="space-y-4" id="hours-operation">
+      <div class="space-y-2">
+        <h2 class="text-xl sm:text-2xl font-black text-brandNavy tracking-tight" data-i18n="section_calendar_title">
+          Weekly Service Hub Schedule
+        </h2>
+        <p class="text-xs text-gray-500 leading-relaxed" data-i18n="section_calendar_desc">
+          Review our operational availability slots. Green days indicate full services. Monday operations route exclusively via commercial lines due to sorting hub cycles.
+        </p>
+      </div>
+
+      <div class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 gap-4">
+          
+          <!-- Monday Card (Highlight closed status) -->
+          <div class="calendar-day-card p-4 rounded-xl border border-amber-200 bg-amber-50/40 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-amber-800" data-i18n="day_mon">Mon</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-amber-500 text-white shadow-sm" data-i18n="day_closed">Closed</span>
+            <p class="text-[11px] sm:text-xs text-amber-700/80 font-semibold leading-snug" data-i18n="calendar_mon_status">Closed (Commercial Only)</p>
+          </div>
+
+          <!-- Tue -->
+          <div class="calendar-day-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/10 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-brandNavy" data-i18n="day_tue">Tue</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-brandEmerald text-white shadow-sm" data-i18n="day_open">Open</span>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium leading-snug" data-i18n="calendar_tue_sun_status">Active Service Hub Open</p>
+          </div>
+
+          <!-- Wed -->
+          <div class="calendar-day-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/10 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-brandNavy" data-i18n="day_wed">Wed</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-brandEmerald text-white shadow-sm" data-i18n="day_open">Open</span>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium leading-snug" data-i18n="calendar_tue_sun_status">Active Service Hub Open</p>
+          </div>
+
+          <!-- Thu -->
+          <div class="calendar-day-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/10 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-brandNavy">Thu</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-brandEmerald text-white shadow-sm" data-i18n="day_open">Open</span>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium leading-snug" data-i18n="calendar_tue_sun_status">Active Service Hub Open</p>
+          </div>
+
+          <!-- Fri -->
+          <div class="calendar-day-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/10 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-brandNavy">Fri</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-brandEmerald text-white shadow-sm" data-i18n="day_open">Open</span>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium leading-snug" data-i18n="calendar_tue_sun_status">Active Service Hub Open</p>
+          </div>
+
+          <!-- Sat -->
+          <div class="calendar-day-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/10 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-brandNavy">Sat</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-brandEmerald text-white shadow-sm" data-i18n="day_open">Open</span>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium leading-snug" data-i18n="calendar_tue_sun_status">Active Service Hub Open</p>
+          </div>
+
+          <!-- Sun -->
+          <div class="calendar-day-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/10 flex flex-col items-center text-center space-y-2">
+            <span class="text-xs sm:text-sm font-extrabold text-brandNavy">Sun</span>
+            <span class="px-2 py-0.5 text-[9px] sm:text-xs font-black uppercase rounded bg-brandEmerald text-white shadow-sm" data-i18n="day_open">Open</span>
+            <p class="text-[11px] sm:text-xs text-gray-400 font-medium leading-snug" data-i18n="calendar_tue_sun_status">Active Service Hub Open</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal Discharges & Prohibited Debris -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6" id="legal-waiver">
+      
+      <!-- Operations Note Card -->
+      <div class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
+        <h3 class="text-xs sm:text-sm font-black text-brandNavy uppercase tracking-wider border-b border-slate-100 pb-2" data-i18n="waiver_note_title">
+          Legal Waiver &amp; Operations Note
+        </h3>
+        <p id="waiver-note-text" class="text-xs sm:text-sm text-gray-500 leading-relaxed font-medium bg-slate-50 p-4 rounded-xl border border-slate-200/35 min-h-[80px]">
+          <!-- Loaded dynamically in services.js -->
+        </p>
+      </div>
+
+      <!-- Prohibitions Card -->
+      <div class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm space-y-4">
+        <h3 class="text-xs sm:text-sm font-black text-rose-800 uppercase tracking-wider border-b border-slate-100 pb-2" data-i18n="prohibition_note_title">
+          Strictly Prohibited Volatile Materials
+        </h3>
+        <p id="prohibition-note-text" class="text-xs sm:text-sm text-rose-600 leading-relaxed font-medium bg-rose-50/50 p-4 rounded-xl border border-rose-100/40 min-h-[80px]">
+          <!-- Loaded dynamically in services.js -->
+        </p>
+      </div>
+
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="space-y-4">
+      <div class="space-y-2">
+        <h2 class="text-xl sm:text-2xl font-black text-brandNavy tracking-tight" data-i18n="section_faq_title">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-xs text-gray-500 leading-relaxed" data-i18n="section_faq_desc">
+          Quick answers to common resident questions regarding load criteria, stair charges, and bad weather operations.
+        </p>
+      </div>
+
+      <div class="space-y-3" id="faq-accordion-group">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-1" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-1">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q1_title">What is a municipal collection allowance?</span>
+            <svg id="faq-chevron-1" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-1" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-1">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q1_body">
+                Most West Island municipalities provide free annual disposal credits to residents. By choosing our Disposal Meeting or Co-Pilot services, we meet you at the local eco-center so you can use these free credits to offset tip fees entirely.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-2" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-2">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q2_title">How do you calculate stair flight penalties?</span>
+            <svg id="faq-chevron-2" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-2" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-2">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q2_body">
+                Ground level or driveway loading has $0 travel surcharge. Hand-carrying items down indoor stairs (per flight of 10+ steps) adds a standard labor flight fee. Disposal Meeting and Full Co-Pilot tiers do not charge stairs fees if loaded to ground level first.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-3" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-3">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q3_title">Do you operate during heavy rain or snow?</span>
+            <svg id="faq-chevron-3" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-3" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-3">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q3_body">
+                Yes, we operate year-round. However, if extreme weather makes transport or loading unsafe, dispatch will contact you to reschedule or shift to commercial routing.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-4" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-4">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q4_title">Are there any hidden fees? What does the price cover?</span>
+            <svg id="faq-chevron-4" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-4" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-4">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q4_body">
+                Never. We believe in 100% upfront transparency. Our quoted estimates include all travel distance fuel, loading labor, sweep-up, and municipal sorting. Dump disposal fees are fully absorbed in Unprepared Pick-Up, or offset using your residency allowance in On-Site Disposal Meeting & Full Co-Pilot.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all duration-300">
+          <button id="faq-header-5" class="w-full text-left p-4 flex items-center justify-between focus:outline-none select-none" aria-expanded="false" aria-controls="faq-content-5">
+            <span class="text-sm sm:text-base font-bold text-brandNavy" data-i18n="faq_q5_title">Do you remove heavy materials like brick, concrete, or soil?</span>
+            <svg id="faq-chevron-5" class="chevron-icon w-4 h-4 text-slate-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faq-content-5" class="accordion-content overflow-hidden" role="region" aria-labelledby="faq-header-5">
+            <div>
+              <div class="p-4 border-t border-slate-100 bg-slate-50/30 text-xs sm:text-sm text-gray-600 font-medium leading-relaxed" data-i18n="faq_q5_body">
+                Yes! We specialize in post-renovation masonry hauling. However, dense aggregates are subject to truck axle weight safety regulations. Any heavy load exceeding 3 m³ is automatically restructured into multiple safe trips to protect your driveway and our vehicles.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modern Detailed Footer with Operational Anchor Links -->
+  <footer class="bg-brandNavy text-slate-400 text-xs py-12 border-t border-blue-950 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-8 border-b border-blue-900/40">
+      
+      <!-- Footer Logo and Tagline -->
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2 text-white font-bold">
+          <img src="./assets/logo_simple.svg" alt="Clear Site" class="h-6 w-auto object-contain">
+          <span class="text-xs font-bold text-brandEmerald tracking-wider uppercase border-l border-blue-900/60 pl-2 ml-1" data-i18n="logo_subtitle">West Island</span>
+        </div>
+        <p class="text-[11px] leading-relaxed text-slate-400" data-i18n="tagline_desc">Welcome to a cleaner, more efficient junk removal experience.</p>
+      </div>
+      
+      <!-- Quick Anchor Links -->
+      <div class="space-y-3">
+        <h4 class="font-extrabold text-white uppercase tracking-wider text-[10px]" data-i18n="footer_links_title">Operational Resources</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#legal-waiver" class="hover:text-brandEmerald transition-all" data-i18n="waiver_note_title">Legal Waiver &amp; Operations Note</a></li>
+          <li><a href="#hours-operation" class="hover:text-brandEmerald transition-all" data-i18n="card_monday_title">🚨 The Monday Calendar Breakout</a></li>
+          <li><a href="./index.html" class="hover:text-brandEmerald transition-all" data-i18n="footer_link_calc">Price Estimation Tool</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="space-y-3">
+        <h4 class="font-extrabold text-white uppercase tracking-wider text-[10px]" data-i18n="footer_contact_title">Contact Dispatch</h4>
+        <p class="text-[11px] text-slate-400 leading-relaxed">
+          Phone: <a href="tel:5140000000" class="hover:text-brandEmerald transition-all">(514) 000-0000</a><br>
+          Email: <a href="mailto:info@clearsite.ca" class="hover:text-brandEmerald transition-all">info@clearsite.ca</a>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Legal Notice and Service Network Area -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-4">
+      <div class="flex items-center space-x-2 text-white font-bold flex-wrap gap-y-1">
+        <span data-i18n="footer_copyright">© 2026 ClearSite Solutions Inc.</span>
+        <span class="text-brandEmerald">•</span>
+        <span data-i18n="footer_tagline">Residential &amp; Commercial Renovation Debris Logistics</span>
+      </div>
+      <p class="max-w-2xl text-[11px] text-slate-400 leading-relaxed">
+        <span data-i18n="footer_service_area" class="font-bold">Service Area Network:</span> Dollard-des-Ormeaux, Pointe-Claire, Beaconsfield, Kirkland, Dorval, Baie-D'Urfé, Sainte-Anne-de-Bellevue, Senneville, Pierrefonds-Roxboro, L'Île-Bizard, Sainte-Geneviève, and Saint-Laurent.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts Loading -->
+  <script src="../js/i18n.js"></script>
+  <script src="../js/services.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 204.87267 147.19823"
+   width="204.87267"
+   height="147.19823"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="logo_simple.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.806"
+     inkscape:cx="336.10188"
+     inkscape:cy="-3.5991141"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="204.87267"
+       height="147.19823"
+       id="page4"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <!-- Sharp, high-contrast linear gradient for the accent dash -->
+    <linearGradient
+       id="emerald-glow"
+       x1="119.31018"
+       y1="48.940147"
+       x2="171.85464"
+       y2="101.48461"
+       gradientTransform="matrix(1.6491612,0,0,0.60636885,-119.18546,52.602437)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#10B981"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#059669"
+         id="stop2" />
+    </linearGradient>
+  </defs>
+  <!-- Global slant matrix to give an aggressive, forward-moving industrial aesthetic -->
+  <g
+     transform="matrix(1,0,-0.17632698,1,23.220119,10)"
+     id="g4">
+    <!-- THE ASYMMETRIC BLOCK: Negative space container for "CLEAR" -->
+    <rect
+       x="-0.32251573"
+       y="-2.7187154"
+       width="170"
+       height="65"
+       rx="6"
+       fill="#1a365d"
+       id="rect2" />
+    <rect
+       x="28.686846"
+       y="63.406952"
+       width="138.01738"
+       height="65.035751"
+       rx="4.8712015"
+       fill="#1a365d"
+       id="rect2-0"
+       style="fill:#e3dedb;stroke-width:0.901284"
+       transform="matrix(1,0,0.0331547,0.99945023,0,0)" />
+    <!-- REVERSED TEXT: "CLEAR" carved out of the solid navy block -->
+    <text
+       x="84.677483"
+       y="43.281284"
+       font-family="system-ui, '-apple-system', sans-serif"
+       font-size="44px"
+       font-weight="900"
+       fill="#ffffff"
+       letter-spacing="-1"
+       text-anchor="middle"
+       id="text2">CLEAR</text>
+    <!-- STANDALONE TEXT: "SITE" standing strong outside the block boundary -->
+    <text
+       x="54.253315"
+       y="107.51163"
+       font-family="system-ui, '-apple-system', sans-serif"
+       font-size="44px"
+       font-weight="900"
+       fill="url(#emerald-glow)"
+       letter-spacing="-1"
+       id="text3"
+       style="fill:#338000">SITE</text>
+    <!-- ACCENT FLASH: Dynamic separator slash reflecting site optimization -->
+    <!-- REINFORCED SUB-TEXT BASELINE: "WEST ISLAND" pinning down local authority -->
+    <!-- MINIMALIST LOGISTICS DOT: Final visual anchor point -->
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "currency": "CAD",
+  "meta": {
+    "organization": "ClearSite Solutions",
+    "last_updated": "2026-06"
+  },
+  "services": {
+    "base_mobilization": 50.00,
+    "travel_rate_per_km": 0.95,
+    "disposal": {
+      "commercial_facility_per_ton": 140.00,
+      "municipal_overflow_per_m3": 35.00
+    },
+    "handling": {
+      "staircase_per_flight_penalty": 30.00,
+      "heavy_aggregate_sorting_fee": 75.00
+    },
+    "crew_labor_rate_per_hour": 60.00
+  },
+  "tiers": {
+    "level_1_unprepared": {
+      "name": "Unprepared Pick-Up",
+      "base_multiplier": 1.5,
+      "allotted_labor_hours": 2.5,
+      "absorbs_commercial_dump_fees": true,
+      "requires_client_presence": false
+    },
+    "level_2_curbside": {
+      "name": "Curbside Pick-Up",
+      "base_multiplier": 1.0,
+      "allotted_labor_hours": 1.0,
+      "absorbs_commercial_dump_fees": true,
+      "requires_client_presence": false
+    },
+    "level_3_meeting": {
+      "name": "On-Site Disposal Meeting",
+      "base_multiplier": 1.2,
+      "allotted_labor_hours": 2.0,
+      "absorbs_commercial_dump_fees": false,
+      "requires_client_presence": true
+    },
+    "level_4_copilot": {
+      "name": "Full Co-Pilot Labor Share",
+      "base_multiplier": 0.6,
+      "allotted_labor_hours": 2.5,
+      "absorbs_commercial_dump_fees": false,
+      "requires_client_presence": true
+    }
+  },
+  "thresholds": {
+    "max_masonry_concrete_volume_m3": 3.0,
+    "truck_total_capacity_m3": 12.0
+  },
+  "discounts_and_modifiers": {
+    "multi_trip_savings_percentage": 15.0,
+    "seasonal_multiplier": 1.00
+  }
+}

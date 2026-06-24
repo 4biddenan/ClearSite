@@ -1,0 +1,15 @@
+npx skills add google/skills
+
+
+
+https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md
+
+npx antigravity-awesome-skills --path .agents/skills --category 
+
+frontend-design
+frontend-developer
+frontend-mobile-development-component-scaffold
+frontend-slides
+seo-aeo-meta-description-generator
+seo-competitor-pages
+seo-content-writer
