@@ -3,8 +3,10 @@
    ========================================================================== */
 
 /* --- 1. Global Reset & Defaults (Mobile-First) --- */
-html {
+html, body {
   scroll-behavior: smooth;
+  height: auto !important;
+  overflow-y: auto !important;
 }
 
 body {
