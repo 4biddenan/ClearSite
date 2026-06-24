@@ -213,3 +213,11 @@ h1, h2, h3, h4, .font-heading {
   z-index: 1000;
   background-color: #fff;
 }
+
+/* Sticky wrapper for top header */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
