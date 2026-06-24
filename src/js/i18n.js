@@ -84,11 +84,11 @@ class ClearSiteI18n {
     const frToggleBtn = document.getElementById('lang-toggle-fr');
     if (enToggleBtn && frToggleBtn) {
       if (this.currentLang === 'en') {
-        enToggleBtn.className = "px-3 py-1 text-xs font-black uppercase rounded-lg bg-brandEmerald text-white shadow-sm transition-all";
-        frToggleBtn.className = "px-3 py-1 text-xs font-bold uppercase rounded-lg text-gray-500 hover:text-brandNavy transition-all";
+        enToggleBtn.className = "px-3 py-1 text-xs font-extrabold uppercase rounded-full bg-brandEmerald text-white shadow-sm transition-all";
+        frToggleBtn.className = "px-3 py-1 text-xs font-semibold uppercase rounded-full text-slate-500 hover:text-brandNavy transition-all";
       } else {
-        enToggleBtn.className = "px-3 py-1 text-xs font-bold uppercase rounded-lg text-gray-500 hover:text-brandNavy transition-all";
-        frToggleBtn.className = "px-3 py-1 text-xs font-black uppercase rounded-lg bg-brandEmerald text-white shadow-sm transition-all";
+        enToggleBtn.className = "px-3 py-1 text-xs font-semibold uppercase rounded-full text-slate-500 hover:text-brandNavy transition-all";
+        frToggleBtn.className = "px-3 py-1 text-xs font-extrabold uppercase rounded-full bg-brandEmerald text-white shadow-sm transition-all";
       }
     }
 

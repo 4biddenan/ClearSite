@@ -190,3 +190,18 @@ input[type="range"]::-webkit-slider-thumb:active {
 .calendar-day-card:hover {
   transform: translateY(-2px);
 }
+
+/* --- 7. Font & Typography Overrides --- */
+/* Force premium Outfit font on all buttons, forms, inputs, and headings to override soloist.ai defaults */
+button, 
+.btn, 
+#lang-toggle button, 
+input, 
+select, 
+textarea {
+  font-family: 'Outfit', sans-serif !important;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', sans-serif !important;
+}
