@@ -185,7 +185,8 @@ class ClearSitePricingEngine {
         handlingOverhead += rates.handling.heavy_aggregate_sorting_fee;
       }
 
-      let singleTripTotal = baseCost + distanceCost + handlingOverhead;
+      let disposalCost = this.currentVolume * rates.disposal.municipal_overflow_per_m3;
+      let singleTripTotal = baseCost + distanceCost + handlingOverhead + disposalCost;
       let totalAggregatedCost = singleTripTotal;
 
       // Compound subsequent trip pipelines using multi-trip savings percentages
@@ -223,6 +224,23 @@ class ClearSitePricingEngine {
       selTierEl.value = this.selectedTier;
     }
 
+    // Update hidden tracking fields inside forms
+    document.querySelectorAll('.form-tier').forEach(el => el.value = this.selectedTier);
+    document.querySelectorAll('.form-town').forEach(el => {
+      const townSelect = document.getElementById('sel-town');
+      el.value = townSelect ? townSelect.value : '';
+    });
+    document.querySelectorAll('.form-volume').forEach(el => el.value = this.currentVolume + ' m³');
+    document.querySelectorAll('.form-stairs').forEach(el => el.value = this.stairFlights + ' flights');
+    document.querySelectorAll('.form-masonry').forEach(el => el.value = this.hasMasonry ? 'Yes' : 'No');
+    
+    const selectedVal = matrixOutputs[this.selectedTier];
+    let trackingPriceStr = `$${selectedVal.toFixed(2)} CAD`;
+    if (tripsCount > 1) {
+      trackingPriceStr += ` (${tripsCount} trips)`;
+    }
+    document.querySelectorAll('.form-price').forEach(el => el.value = trackingPriceStr);
+
     // Highlight the selected service card in the list
     const tiersList = ['level_1_unprepared', 'level_2_curbside', 'level_3_meeting', 'level_4_copilot'];
     tiersList.forEach(tierKey => {
@@ -248,6 +266,26 @@ class ClearSitePricingEngine {
 
       if (elWaiverText) elWaiverText.innerText = activeWaiverText;
       if (elProhibitionsText) elProhibitionsText.innerText = prohibitionsText;
+    }
+
+    // Update summary labels in the booking confirmation tab dynamically
+    const summaryTier = document.getElementById('summary-value-tier');
+    const summaryVolume = document.getElementById('summary-value-volume');
+    const summaryPrice = document.getElementById('summary-value-price');
+    
+    if (summaryTier) {
+      let tierNum = '1';
+      if (this.selectedTier.includes('curbside')) tierNum = '2';
+      else if (this.selectedTier.includes('meeting')) tierNum = '3';
+      else if (this.selectedTier.includes('copilot')) tierNum = '4';
+      const tierDictKey = `tier_${tierNum}_title`;
+      summaryTier.innerText = dict ? (dict[tierDictKey] || this.selectedTier) : this.selectedTier;
+    }
+    if (summaryVolume) {
+      summaryVolume.innerText = `${this.currentVolume} m³`;
+    }
+    if (summaryPrice) {
+      summaryPrice.innerText = trackingPriceStr;
     }
   }
 }

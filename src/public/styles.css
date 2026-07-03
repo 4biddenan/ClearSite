@@ -773,5 +773,19 @@ body.multi-trip-active #estimated-cost-display {
   }
 }
 
+/* Active Day Card in Scheduler picker */
+.sched-day-card.active {
+  border-color: var(--color-emerald) !important;
+  background-color: rgba(16, 185, 129, 0.05) !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Custom button selectors */
+.select-time-btn.btn-success {
+  background-color: var(--color-emerald) !important;
+  border-color: var(--color-emerald) !important;
+}
+
+
 
 

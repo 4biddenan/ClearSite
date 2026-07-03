@@ -56,36 +56,9 @@ content="Premium and budget-friendly site cleanup and junk removal services in
             </a>
             <div class="d-flex align-items-center gap-3">
               <ul class="nav nav-pills align-items-center gap-2 mb-0">
-                <li class="nav-item">
-                  <a
-                    href="#services-1"
-                    class="nav-link text-slate-500 fw-bold py-1 px-2"
-                    data-i18n="nav_services"
-                  >
-                    Services
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="#gallery-1"
-                    class="nav-link text-slate-500 fw-bold py-1 px-2"
-                    data-i18n="nav_gallery"
-                  >
-                    Gallery
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="#scheduling-1"
-                    class="nav-link text-slate-500 fw-bold py-1 px-2"
-                    data-i18n="nav_schedule"
-                  >
-                    Schedule
-                  </a>
-                </li>
                 <li class="ms-3 d-flex align-items-center">
                   <a
-                    href="#scheduling-1"
+                    href="#contact-1"
                     class="btn btn-primary fw-bold px-3 py-1.5 rounded-pill"
                     data-i18n="btn_contact_us"
                   >
@@ -130,7 +103,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                     alt="A nice pile of junk"
                     class="img-fluid rounded-4 shadow-sm hero-image"
                     loading="eager"
-                    src="./assets/intro-hero.jpg"
+                    src="./assets/intro-hero.webp"
                   />
                 </div>
               </div>
@@ -183,7 +156,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                     overflow-hidden"
                 >
                   <img
-                    src="./assets/service1.jpg"
+                    src="./assets/service1.webp"
                     class="card-img-top"
                     style="height: 220px; object-fit: cover;"
                     alt="Home Renovation"
@@ -214,7 +187,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                     overflow-hidden"
                 >
                   <img
-                    src="./assets/service2.jpg"
+                    src="./assets/service2.webp"
                     class="card-img-top"
                     style="height: 220px; object-fit: cover;"
                     alt="Stuff Removal"
@@ -245,7 +218,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                     overflow-hidden"
                 >
                   <img
-                    src="./assets/service3.jpg"
+                    src="./assets/service3.webp"
                     class="card-img-top"
                     style="height: 220px; object-fit: cover;"
                     alt="Tornado Damage"
@@ -302,7 +275,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="gallery-img-wrapper position-relative" style="height: 380px;">
                   <img
                     alt="New home building."
-                    src="./assets/photo-1774780864430-206ea507535e.jpg"
+                    src="./assets/photo-1774780864430-206ea507535e.webp"
                     class="w-100 h-100 object-fit-cover rounded-4"
                     loading="lazy"
                   />
@@ -361,7 +334,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="gallery-img-wrapper position-relative" style="height: 380px;">
                   <img
                     alt="Streetphotography"
-                    src="./assets/photo-1523551475406-ea1b4145258a.jpg"
+                    src="./assets/photo-1523551475406-ea1b4145258a.webp"
                     class="w-100 h-100 object-fit-cover rounded-4"
                     loading="lazy"
                   />
@@ -420,7 +393,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="gallery-img-wrapper position-relative" style="height: 380px;">
                   <img
                     alt="a room that has some tools in it"
-                    src="./assets/photo-1634586648651-f1fb9ec10d90.jpg"
+                    src="./assets/photo-1634586648651-f1fb9ec10d90.webp"
                     class="w-100 h-100 object-fit-cover rounded-4"
                     loading="lazy"
                   />
@@ -478,7 +451,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="gallery-img-wrapper position-relative" style="height: 380px;">
                   <img
                     alt="a close up of a sign on a tree"
-                    src="./assets/photo-1675395594169-c6b14260e271.jpg"
+                    src="./assets/photo-1675395594169-c6b14260e271.webp"
                     class="w-100 h-100 object-fit-cover rounded-4"
                     loading="lazy"
                   />
@@ -529,6 +502,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 </div>
               </div>
 
+              </div>
               <!-- Right Column: Sticky Estimator Card -->
               <div class="col-12 col-lg-5">
                 <div class="sticky-sidebar">
@@ -560,9 +534,9 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                       role="tab"
                       aria-selected="false"
                       onclick="switchControlPanelState('contact')"
-                      data-i18n="tab_contact"
+                      data-i18n="tab_confirm"
                     >
-                    Speak to Rep
+                    Confirm
                     </button>
                   </div>
                   <div class="card-body p-4">
@@ -691,112 +665,203 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                       </button>
                     </div>
                     <!-- /panel-quote -->
-                    <!-- Panel: Book -->
                     <div id="panel-state-book" class="panel-state d-none">
-                      <label class="sched-label mb-3" data-i18n="label_schedule">
-                      Select Real-Time Route Window
+                      <div class="mb-3">
+                        <label class="sched-label mb-2" data-i18n="label_date_select">
+                        Select Available Date
+                        </label>
+                        <input
+                          type="date"
+                          id="selected-date"
+                          class="form-control-sched"
+                          required=""
+                        />
+                      </div>
+
+                      <label class="sched-label mb-2" data-i18n="label_time_slot">
+                      Select Time Window
                       </label>
-                      <div class="row g-2 text-center mb-3">
-                        <div class="col-4">
-                          <div class="sched-day-card closed">
-                            <span data-i18n="day_mon">
-                            Mon
-                            </span>
-                            <br/>
-                            <span
-                              class="fw-normal"
-                              style="font-size:.625rem;"
-                              data-i18n="day_closed"
-                            >
-                            Closed
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-4">
-                          <div class="sched-day-card standard">
-                            <span class="sched-day-badge" data-i18n="day_slots">
-                            1 Slot Left
-                            </span>
-                            <span data-i18n="day_tue">
-                            Tue
-                            </span>
-                            <br/>
-                            <span
-                              class="fw-normal"
-                              style="font-size:.625rem;"
-                              data-i18n="day_standard"
-                            >
-                            Standard
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-4">
-                          <div class="sched-day-card open">
-                            <span data-i18n="day_wed">
-                            Wed
-                            </span>
-                            <br/>
-                            <span
-                              class="fw-normal"
-                              style="font-size:.625rem;"
-                              data-i18n="day_open"
-                            >
-                            Open
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card border bg-light mb-3 p-3">
-                        <p class="small text-muted mb-0" data-i18n="schedule_desc">
-                          To minimize fuel overhead, we schedule a maximum of
-                          <strong>
-                          2 operations daily per vehicle unit
-                          </strong>
-                          . Lock your appointment to reserve an on-site representative
-                          review.
-                        </p>
-                      </div>
-                      <button
-                        class="sched-btn-navy"
-                        onclick="showAlert('alert_booked', 'Appointment Request Lodged.')"
-                        data-i18n="btn_lock_appointment"
+                      <div
+                        id="time-slots-container"
+                        class="d-flex flex-column gap-2 mb-3"
                       >
-                      Lock My Appointment Slot
-                      </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary text-start p-2 rounded-3
+                            select-time-btn fw-semibold"
+                          data-time="Morning (08:00 - 12:00)"
+                          style="font-size: .875rem;"
+                        >
+                        🌅 Morning (08:00 - 12:00)
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary text-start p-2 rounded-3
+                            select-time-btn fw-semibold"
+                          data-time="Afternoon (12:00 - 16:00)"
+                          style="font-size: .875rem;"
+                        >
+                        ☀️ Afternoon (12:00 - 16:00)
+                        </button>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center mt-3 pt-2
+                          border-top"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-link text-muted p-0 text-decoration-none small"
+                          onclick="switchControlPanelState('quote')"
+                        >
+                        ← Back
+                        </button>
+                        <button
+                          type="button"
+                          id="btn-to-confirmation"
+                          class="btn btn-secondary py-2 px-4 rounded-pill fw-bold
+                            text-white"
+                          style="width: auto; font-size: .875rem;"
+                          disabled=""
+                        >
+                        Select a Slot
+                        </button>
+                      </div>
                     </div>
                     <!-- /panel-book -->
-                    <!-- Panel: Contact -->
+
+                    <!-- Panel: Confirmation & Details -->
                     <div id="panel-state-contact" class="panel-state d-none">
-                      <p class="small text-muted mb-3" data-i18n="contact_desc">
-                        Are you a general contractor coordinating a major commercial
-                        cleanout or
-                        residential home demo? Leave your details below and an active
-                        dispatch agent
-                        will call you directly.
-                      </p>
-                      <div class="d-flex flex-column gap-3 mb-3">
+                      <form name="estimator-booking" method="POST" data-netlify="true">
+                        <input type="hidden" name="selected_tier" class="form-tier" />
+                        <input type="hidden" name="town" class="form-town" />
+                        <input type="hidden" name="volume" class="form-volume" />
+                        <input type="hidden" name="stairs" class="form-stairs" />
+                        <input type="hidden" name="masonry" class="form-masonry" />
+                        <input type="hidden" name="estimated_price" class="form-price" />
                         <input
-                          type="text"
-                          data-i18n="input_name"
-                          placeholder="Contact Name / Project Coordinator"
-                          class="form-control-sched"
+                          type="hidden"
+                          name="selected_slot"
+                          id="selected-slot-input"
                         />
-                        <input
-                          type="tel"
-                          data-i18n="input_phone"
-                          placeholder="Direct Cellular Phone (514) 000-0000"
-                          class="form-control-sched"
-                        />
-                      </div>
-                      <button
-                        class="sched-btn-navy"
-                        onclick="showAlert('alert_callback', 'Callback sequence authorized.')"
-                        data-i18n="btn_callback"
-                      >
-                      Request Agent Callback within 15 mins
-                      </button>
+
+                        <div class="card border-0 bg-light p-3 rounded-3 mb-3">
+                          <h6
+                            class="fw-bold text-brandNavy mb-2 small text-uppercase"
+                            data-i18n="summary_title"
+                          >
+                          Booking Summary
+                          </h6>
+                          <div class="row g-2 small text-muted">
+                            <div class="col-6">
+                              <strong data-i18n="summary_tier">Service Tier:</strong>
+                            </div>
+                            <div
+                              class="col-6 text-end text-dark fw-semibold"
+                              id="summary-value-tier"
+                            >
+                            -
+                            </div>
+
+                            <div class="col-6">
+                              <strong data-i18n="summary_volume">Volume:</strong>
+                            </div>
+                            <div
+                              class="col-6 text-end text-dark fw-semibold"
+                              id="summary-value-volume"
+                            >
+                            -
+                            </div>
+
+                            <div class="col-6">
+                              <strong data-i18n="summary_slot">Date &amp; Time:</strong>
+                            </div>
+                            <div
+                              class="col-6 text-end text-dark fw-semibold"
+                              id="summary-value-slot"
+                            >
+                            -
+                            </div>
+
+                            <div class="col-6">
+                              <strong data-i18n="summary_price">Est. Price:</strong>
+                            </div>
+                            <div
+                              class="col-6 text-end text-success fw-bold fs-6"
+                              id="summary-value-price"
+                            >
+                            -
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-2">
+                          <label class="sched-label mb-1" for="book-name">
+                          Name *
+                          </label>
+                          <input
+                            type="text"
+                            name="name"
+                            id="book-name"
+                            placeholder="John Doe"
+                            class="form-control-sched"
+                            required=""
+                          />
+                        </div>
+
+                        <div class="mb-3">
+                          <label class="sched-label mb-1" for="book-contact">
+                          Phone or Email *
+                          </label>
+                          <input
+                            type="text"
+                            name="contact"
+                            id="book-contact"
+                            placeholder="Phone (514) 000-0000 or Email"
+                            class="form-control-sched"
+                            required=""
+                          />
+                        </div>
+
+                        <div class="mb-3">
+                          <label
+                            class="sched-label mb-1"
+                            for="book-comments"
+                            data-i18n="label_comments"
+                          >
+                          Special Instructions / Comments
+                          </label>
+                          <textarea
+                            name="comments"
+                            id="book-comments"
+                            placeholder="Describe any access restrictions, specific items, or details..."
+                            class="form-control-sched"
+                            rows="2"
+                            style="height: auto;"
+                          ></textarea>
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between align-items-center mt-3
+                            pt-2 border-top"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-link text-muted p-0 text-decoration-none small"
+                            onclick="switchControlPanelState('book')"
+                          >
+                          ← Back
+                          </button>
+                          <button
+                            type="submit"
+                            class="sched-btn-primary py-2 px-4 rounded-pill fw-bold"
+                            style="width: auto; font-size: .875rem;"
+                          >
+                          Submit Booking
+                          </button>
+                        </div>
+                      </form>
                     </div>
-                    <!-- /panel-contact -->
                   </div>
                   <!-- /card-body -->
                 </div>
@@ -806,7 +871,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
             </div>
           </div>
         </div>
-      </div></div>
+      </div>
       
       <div
         class="position-relative"
@@ -838,7 +903,7 @@ content="Premium and budget-friendly site cleanup and junk removal services in
       >
         <div id="ImageBanner" class="w-100 overflow-hidden" style="max-height: 380px;">
           <img
-            src="./assets/photo-1770068511790-091e2c8cb382.jpg"
+            src="./assets/photo-1770068511790-091e2c8cb382.webp"
             class="w-100 h-100 img-fluid"
             style="object-fit: cover; min-height: 250px; max-height: 380px;"
             alt="Waste logistics landfill view"
@@ -1155,13 +1220,14 @@ content="Premium and budget-friendly site cleanup and junk removal services in
             </h2>
             <div class="row justify-content-center">
               <div class="col-lg-6 col-md-8 col-sm-12">
+                <form name="contact" method="POST" data-netlify="true">
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="name"
+                    id="name" name="name"
                     placeholder="John Doe"
                     maxlength="5000"
-                    disabled=""
+                    
                     aria-required="true"
                     type="text"
                   />
@@ -1175,10 +1241,10 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="phone"
+                    id="phone" name="phone"
                     placeholder="123-456-7890"
                     maxlength="5000"
-                    disabled=""
+                    
                     type="text"
                   />
                   <label
@@ -1191,10 +1257,10 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
-                    id="email"
+                    id="email" name="email"
                     placeholder="name@example.com"
                     maxlength="5000"
-                    disabled=""
+                    
                     aria-required="true"
                     type="text"
                   />
@@ -1203,10 +1269,10 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 <div class="form-floating mb-3">
                   <textarea
                     class="form-control"
-                    id="message"
+                    id="message" name="message"
                     placeholder="Enter your message here"
                     maxlength="5000"
-                    disabled=""
+                    
                     aria-required="true"
                     style="height: 120px;"
                   ></textarea>
@@ -1218,7 +1284,8 @@ content="Premium and budget-friendly site cleanup and junk removal services in
                 >
                   Contact Us
                 </button>
-              </div>
+              
+                </form></div>
             </div>
           </div>
         </div>

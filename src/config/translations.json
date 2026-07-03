@@ -117,7 +117,16 @@
     "faq_q7_title": "What are the requirements and discharges for each service tier?",
     "faq_q7_body": "Each tier has distinct operational parameters: Unprepared Pick-Up requires full site access for our crew; Curbside Collection requires all junk positioned at the property line prior to pickup; On-Site Disposal Meeting requires the client to meet at the eco-centre gate with resident ID for fee off-set; and Full Co-Pilot is passive for vehicle operation (a licensed ClearSite professional operates the vehicle at all times due to insurance compliance).",
     "widget_title": "Estimate & Book",
-    "label_tier_select": "Service Tier"
+    "label_tier_select": "Service Tier",
+    "tab_confirm": "Confirm",
+    "summary_title": "Booking Summary",
+    "summary_tier": "Service Tier",
+    "summary_volume": "Volume",
+    "summary_slot": "Date & Time",
+    "summary_price": "Est. Price",
+    "label_time_slot": "Select Time Window",
+    "label_date_select": "Select Available Date",
+    "label_comments": "Special Instructions / Comments"
   },
   "fr": {
     "site_title": "Ramassage d'Encombrants et Logistique de Débris | ClearSite Solutions",
@@ -237,6 +246,15 @@
     "faq_q7_title": "Quelles sont les exigences et décharges pour chaque formule de service ?",
     "faq_q7_body": "Chaque formule a des paramètres opérationnels distincts : la Collecte Non Préparée exige un accès complet au site pour notre équipe ; la Collecte en Bordure de Rue exige que tous les débris soient placés en bordure de propriété avant notre arrivée ; le Rendez-vous à l'Écocentre exige que le client se rende à l'écocentre avec une pièce d'identité pour compenser les frais ; et le Partage de Main-d'Œuvre est passif pour la conduite (un professionnel agréé conduit le véhicule en tout temps pour des raisons d'assurance).",
     "widget_title": "Estimation & Réservation",
-    "label_tier_select": "Formule de service"
+    "label_tier_select": "Formule de service",
+    "tab_confirm": "Confirmer",
+    "summary_title": "Résumé de la réservation",
+    "summary_tier": "Formule de service",
+    "summary_volume": "Volume",
+    "summary_slot": "Date et heure",
+    "summary_price": "Tarif estimé",
+    "label_time_slot": "Sélectionnez un créneau",
+    "label_date_select": "Sélectionnez une date disponible",
+    "label_comments": "Instructions spéciales / Commentaires"
   }
 }

@@ -94,5 +94,124 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 6. Live Schedule date and time slot selection logic
+  const dateInput = document.getElementById('selected-date');
+  const timeBtns = document.querySelectorAll('.select-time-btn');
+  const slotInput = document.getElementById('selected-slot-input');
+  const toConfirmationBtn = document.getElementById('btn-to-confirmation');
+  
+  let selectedDay = '';
+  let selectedTime = '';
+  
+  // Set minimum date to tomorrow
+  if (dateInput) {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    dateInput.min = `${yyyy}-${mm}-${dd}`;
+    
+    dateInput.addEventListener('change', () => {
+      const dateVal = dateInput.value;
+      if (dateVal) {
+        const parts = dateVal.split('-');
+        const d = new Date(parts[0], parts[1] - 1, parts[2]);
+        const activeLang = window.ClearSiteI18n ? window.ClearSiteI18n.currentLang : 'en';
+        selectedDay = d.toLocaleDateString(activeLang === 'fr' ? 'fr-FR' : 'en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+      } else {
+        selectedDay = '';
+      }
+      checkSlotSelection();
+    });
+  }
+
+  function checkSlotSelection() {
+    if (selectedDay && selectedTime) {
+      const fullSlotString = `${selectedDay} - ${selectedTime}`;
+      if (slotInput) {
+        slotInput.value = fullSlotString;
+      }
+      
+      const summarySlot = document.getElementById('summary-value-slot');
+      if (summarySlot) {
+        summarySlot.innerText = fullSlotString;
+      }
+      
+      if (toConfirmationBtn) {
+        toConfirmationBtn.removeAttribute('disabled');
+        toConfirmationBtn.innerText = 'Next: Confirm →';
+        toConfirmationBtn.classList.remove('btn-secondary');
+        toConfirmationBtn.classList.add('sched-btn-primary');
+      }
+    } else {
+      if (toConfirmationBtn) {
+        toConfirmationBtn.setAttribute('disabled', 'true');
+        toConfirmationBtn.innerText = 'Select a Slot';
+        toConfirmationBtn.classList.remove('sched-btn-primary');
+        toConfirmationBtn.classList.add('btn-secondary');
+      }
+    }
+  }
+
+  timeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      timeBtns.forEach(b => {
+        b.classList.remove('btn-success', 'text-white');
+        b.classList.add('btn-outline-secondary');
+      });
+      btn.classList.remove('btn-outline-secondary');
+      btn.classList.add('btn-success', 'text-white');
+      selectedTime = btn.getAttribute('data-time');
+      checkSlotSelection();
+    });
+  });
+  
+  if (toConfirmationBtn) {
+    toConfirmationBtn.addEventListener('click', () => {
+      if (selectedDay && selectedTime) {
+        switchControlPanelState('contact');
+      }
+    });
+  }
+
+  // 7. Netlify Forms AJAX interceptor
+  document.querySelectorAll('form[data-netlify="true"]').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      
+      // Netlify forms require the form-name parameter
+      formData.append('form-name', form.name);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        // Success redirections / alert simulations
+        if (form.name === 'contact') {
+          showAlert('alert_contact_success', 'Thank you! Your message has been sent.');
+        } else if (form.name === 'estimator-callback') {
+          showAlert('alert_callback', 'Callback sequence authorized.');
+        } else if (form.name === 'estimator-booking') {
+          showAlert('alert_booked', 'Appointment Request Lodged.');
+        }
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('Form submission error. Please try again.');
+      });
+    });
+  });
+
 });
 
