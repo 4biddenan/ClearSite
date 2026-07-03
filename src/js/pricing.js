@@ -217,15 +217,21 @@ class ClearSitePricingEngine {
       this.costDisplay.innerText = costText;
     }
 
-    // Highlight the selected service card in the left list
+    // Synchronize the dropdown selector value
+    const selTierEl = document.getElementById('sel-tier');
+    if (selTierEl) {
+      selTierEl.value = this.selectedTier;
+    }
+
+    // Highlight the selected service card in the list
     const tiersList = ['level_1_unprepared', 'level_2_curbside', 'level_3_meeting', 'level_4_copilot'];
     tiersList.forEach(tierKey => {
       const cardEl = document.getElementById(`service-card-${tierKey}`);
       if (cardEl) {
         if (tierKey === this.selectedTier) {
-          cardEl.className = "bg-white border border-slate-200/80 rounded-2xl p-5 shadow-md border-l-4 border-l-brandEmerald space-y-3 transition-all duration-300 scale-[1.01]";
+          cardEl.classList.add('active-tier');
         } else {
-          cardEl.className = "bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm space-y-3 transition-all duration-300 opacity-75 hover:opacity-100";
+          cardEl.classList.remove('active-tier');
         }
       }
     });

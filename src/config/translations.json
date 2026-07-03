@@ -94,7 +94,7 @@
     "nav_services_faq": "Services & FAQ",
     "nav_home": "Back to Estimator",
     "nav_services": "Services",
-    "nav_gallery": "Gallery",
+    "nav_gallery": "Service Tiers",
     "nav_schedule": "Schedule / Booking",
     "btn_contact_us": "Contact Us",
     "hero_title": "Clear Site West Island: Junk Removal Experts",
@@ -105,7 +105,7 @@
     "service_2_desc": "Professional removal and recycling of old appliances to help you declutter responsibly.",
     "service_3_title": "Construction Debris Removal",
     "service_3_desc": "Efficient removal and disposal of construction junk to keep your site clean and safe.",
-    "gallery_section_title": "Gallery",
+    "gallery_section_title": "Service tiers for your budget",
     "gallery_desc": "Clearing clutter, building cleaner communities. Contact us for reliable junk removal today!",
     "contact_section_title": "Get in Touch",
     "contact_section_desc": "Let’s clear your space with reliable and timely junk removal. Schedule a convenient time for hassle-free residential and construction junk pickup.",
@@ -115,7 +115,9 @@
     "faq_q6_title": "What materials are strictly prohibited?",
     "faq_q6_body": "For the safety of our crew and community compliance, we maintain a zero-tolerance transportation ban on hazardous household waste (HHW). This includes loose asbestos fibers, wet chemical lead paints, storage propane tanks, industrial solvents, or medical pollutants.",
     "faq_q7_title": "What are the requirements and discharges for each service tier?",
-    "faq_q7_body": "Each tier has distinct operational parameters: Unprepared Pick-Up requires full site access for our crew; Curbside Collection requires all junk positioned at the property line prior to pickup; On-Site Disposal Meeting requires the client to meet at the eco-centre gate with resident ID for fee off-set; and Full Co-Pilot is passive for vehicle operation (a licensed ClearSite professional operates the vehicle at all times due to insurance compliance)."
+    "faq_q7_body": "Each tier has distinct operational parameters: Unprepared Pick-Up requires full site access for our crew; Curbside Collection requires all junk positioned at the property line prior to pickup; On-Site Disposal Meeting requires the client to meet at the eco-centre gate with resident ID for fee off-set; and Full Co-Pilot is passive for vehicle operation (a licensed ClearSite professional operates the vehicle at all times due to insurance compliance).",
+    "widget_title": "Estimate & Book",
+    "label_tier_select": "Service Tier"
   },
   "fr": {
     "site_title": "Ramassage d'Encombrants et Logistique de Débris | ClearSite Solutions",
@@ -212,7 +214,7 @@
     "nav_services_faq": "Services & FAQ",
     "nav_home": "Retour à l'Estimateur",
     "nav_services": "Services",
-    "nav_gallery": "Galerie",
+    "nav_gallery": "Formules de service",
     "nav_schedule": "Calendrier / Réservation",
     "btn_contact_us": "Contactez-Nous",
     "hero_title": "Clear Site West Island : Experts en Collecte d'Encombrants",
@@ -223,7 +225,7 @@
     "service_2_desc": "Enlèvement et recyclage professionnels d'anciens appareils pour vous aider à désencombrer de manière responsable.",
     "service_3_title": "Enlèvement de Gravats de Construction",
     "service_3_desc": "Enlèvement et élimination efficaces des débris de construction pour garder votre chantier propre et sécuritaire.",
-    "gallery_section_title": "Galerie",
+    "gallery_section_title": "Formules de service pour votre budget",
     "gallery_desc": "Désencombrer les espaces, bâtir des communautés plus propres. Contactez-nous dès aujourd'hui pour une collecte fiable d'encombrants !",
     "contact_section_title": "Contactez-Nous",
     "contact_section_desc": "Libérons votre espace grâce à une collecte fiable et rapide d'encombrants. Planifiez un moment opportun pour un ramassage sans tracas de vos débris résidentiels et de construction.",
@@ -233,6 +235,8 @@
     "faq_q6_title": "Quels matériaux sont strictement interdits ?",
     "faq_q6_body": "Pour la sécurité de notre équipe et la conformité communautaire, nous maintenons une interdiction absolue sur le transport des résidus domestiques dangereux (RDD). Cela comprend les fibres d'amiante libres, les peintures au plomb liquides, les réservoirs de propane, les solvants industriels ou les polluants médicaux.",
     "faq_q7_title": "Quelles sont les exigences et décharges pour chaque formule de service ?",
-    "faq_q7_body": "Chaque formule a des paramètres opérationnels distincts : la Collecte Non Préparée exige un accès complet au site pour notre équipe ; la Collecte en Bordure de Rue exige que tous les débris soient placés en bordure de propriété avant notre arrivée ; le Rendez-vous à l'Écocentre exige que le client se rende à l'écocentre avec une pièce d'identité pour compenser les frais ; et le Partage de Main-d'Œuvre est passif pour la conduite (un professionnel agréé conduit le véhicule en tout temps pour des raisons d'assurance)."
+    "faq_q7_body": "Chaque formule a des paramètres opérationnels distincts : la Collecte Non Préparée exige un accès complet au site pour notre équipe ; la Collecte en Bordure de Rue exige que tous les débris soient placés en bordure de propriété avant notre arrivée ; le Rendez-vous à l'Écocentre exige que le client se rende à l'écocentre avec une pièce d'identité pour compenser les frais ; et le Partage de Main-d'Œuvre est passif pour la conduite (un professionnel agréé conduit le véhicule en tout temps pour des raisons d'assurance).",
+    "widget_title": "Estimation & Réservation",
+    "label_tier_select": "Formule de service"
   }
 }

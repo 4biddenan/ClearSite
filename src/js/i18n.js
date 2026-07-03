@@ -10,6 +10,13 @@ class ClearSiteI18n {
     this.init();
   }
 
+  t(key, fallback = '') {
+    if (!this.translations || !this.translations[this.currentLang]) {
+      return fallback;
+    }
+    return this.translations[this.currentLang][key] || fallback;
+  }
+
   async init() {
     try {
       const response = await fetch('../config/translations.json');
@@ -108,3 +115,11 @@ class ClearSiteI18n {
 document.addEventListener('DOMContentLoaded', () => {
   window.ClearSiteI18n = new ClearSiteI18n();
 });
+
+// Global translation & alert helper to simplify inline HTML handlers
+window.showAlert = (key, fallback) => {
+  const msg = window.ClearSiteI18n
+    ? window.ClearSiteI18n.t(key, fallback)
+    : fallback;
+  alert(msg);
+};
